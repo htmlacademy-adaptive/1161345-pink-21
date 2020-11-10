@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Katerina Rakshina](https://up.htmlacademy.ru/adaptive/21/user/1161345).
-* Наставник: `Неизвестно`.
+- Студент: [Katerina Rakshina](https://up.htmlacademy.ru/adaptive/21/user/1161345).
+- Наставник: `Дарья Воздраганова`.
 
 ---
 
