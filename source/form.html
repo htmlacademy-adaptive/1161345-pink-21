@@ -44,17 +44,17 @@
     <section class="form">
       <div class="form__wrapper">
         <h2 class="visually-hidden">Форма для заполнения</h2>
-        <p class="form__title">Конкурс на самое безбашенное путешествие с Пинк</p>
-        <form class="form__quest" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form__quest quest" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend class="visually-hidden">О себе</legend>
             <p>
               <label for="surname">Фамилия:</label>
-              <input class="quest__surname" id="surname" name="surname" placeholder="Укажите фамилию *">
+              <input class="quest__surname" id="surname" name="surname" placeholder="Укажите фамилию *" required>
             </p>
             <p>
               <label for="name">Имя:</label>
-              <input class="quest__name" id="name" name="name" placeholder="Введите ваше имя *">
+              <input class="quest__name" id="name" name="name" placeholder="Введите ваше имя *" required>
             </p>
             <p>
               <label for="patronymic">Отчество:</label>
@@ -65,55 +65,55 @@
             <legend>Ваши безбашенные достижения в путешествии</legend>
             <ul>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--shark" type="checkbox" id="shark" checked>
+                <input class="quest__checkbox--input" type="checkbox" id="shark" checked>
                 <label for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--beach" type="checkbox" id="beach" checked>
+                <input class="quest__checkbox--input" type="checkbox" id="beach" checked>
                 <label for="beach">Обгорел на пляже</label>
               </li>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--Chuck-Norris" type="checkbox" id="Chuck-Norris">
+                <input class="quest__checkbox--input" type="checkbox" id="Chuck-Norris">
                 <label for="Chuck-Norris">Видел Чака Норриса</label>
               </li>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--souvenirs" type="checkbox" id="souvenirs">
+                <input class="quest__checkbox--input" type="checkbox" id="souvenirs">
                 <label for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--tower" type="checkbox" id="tower" checked>
+                <input class="quest__checkbox--input" type="checkbox" id="tower" checked>
                 <label for="tower">Удержал башню</label>
               </li>
               <li class="quest__checkbox">
-                <input class="quest__checkbox--hotel" type="checkbox" id="hotel">
+                <input class="quest__checkbox--input" type="checkbox" id="hotel">
                 <label for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__quest--top">
+          <fieldset>
             <legend class="visually-hidden">Контакты</legend>
             <p>
               <label for="number-tel">Номер телефона</label>
-              <input class="quest__contacts" id="number-tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="quest__contacts" type="number" id="number-tel" name="phone" placeholder="Номер, пожалуйста">
             </p>
             <p>
               <label for="email">Адрес почты</label>
-              <input class="quest__contacts" id="email" name="email" placeholder="Введите почту *">
+              <input class="quest__contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
             </p>
           </fieldset>
           <fieldset>
             <legend>С каким приложением путешествовали?</legend>
             <ul>
               <li>
-                <input class="quest__radio--IOS" type="radio" name="system" id="filter-IOS" value="IOS">
+                <input class="quest__radio-input" type="radio" name="system" id="filter-IOS" value="IOS">
                 <label for="filter-IOS">Pink для IOS</label>
               </li>
               <li>
-                <input class="quest__radio--Android" type="radio" name="system" id="filter-Android" value="Android">
+                <input class="quest__radio--input" type="radio" name="system" id="filter-Android" value="Android">
                 <label for="filter-Android">Pink на Android</label>
               </li>
               <li>
-                <input class="quest__radio--Windows" type="radio" name="system" id="filter-Windows" value="Windows">
+                <input class="quest__radio--input" type="radio" name="system" id="filter-Windows" value="Windows">
                 <label for="filter-Windows">Windows Phone</label>
               </li>
             </ul>
