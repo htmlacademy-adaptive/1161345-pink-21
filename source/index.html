@@ -6,33 +6,36 @@
   <title>HTML Academy: Пинк</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
-      <img src="img/pink.svg" width="74" height="23" alt="Pink">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list list-reset">
-          <li class="main-navigation__list-item">
-            <a href="#" aria-label="Перейти на главную страницу">Главная</a>
-          </li>
-          <li class="main-navigation__list-item">
-            <a href="catalog.html" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
-          </li>
-          <li class="main-navigation__list-item">
-            <a href="form.html" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
-          </li>
-          <li class="main-navigation__list-item">
-            <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
+        <img src="img/pink.svg" width="74" height="23" alt="Pink">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list list-reset">
+            <li class="main-navigation__list-item">
+              <a href="#" aria-label="Перейти на главную страницу">Главная</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a href="catalog.html" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a href="form.html" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -42,7 +45,7 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Скачать мобильное приложение Pink</h2>
-        <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+        <p class="promo__slogan">Взгляните на жизнь<br>иначе!</p>
         <img src="img/screen.png" width="111" height="197" alt="Мобильное приложение Pink">
         <img src="img/phone.png" width="320" height="286" alt="Мобильное приложение Pink">
         <a class="buttton__to-all" href="https://www.apple.com/ru/app-store/" aria-label="Перейти на APP Store для скачивания приложения на Apple" target="_blank">Скачать приложение</a>
