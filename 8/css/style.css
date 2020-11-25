@@ -1,0 +1,353 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page a {
+  text-decoration: none;
+}
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283645;
+}
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.page-header__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.page-header {
+  background-color: #1d2631;
+  color: #ffffff;
+}
+.page-header a {
+  color: inherit;
+}
+.page-header__logo {
+  margin-top: 0;
+  padding-top: 22px;
+  display: block;
+}
+.main-navigation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+.main-navigation__list-item {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.promo__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.promo__wrapper {
+  text-align: center;
+}
+.promo {
+  background-color: #1d2631;
+  color: #ffffff;
+}
+.promo a {
+  color: inherit;
+  margin-top: 31px;
+  display: inline-block;
+}
+.promo__slogan {
+  margin-top: 0;
+  padding-top: 29px;
+  padding-bottom: 34px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+.promo__header {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 51px;
+}
+.promo figure {
+  margin: 0;
+}
+.promo__intro {
+  padding-bottom: 38px;
+}
+.promo__img-second {
+  position: relative;
+}
+.promo__img-first {
+  position: absolute;
+  right: 577px;
+  top: 520px;
+}
+.buttton__to-all {
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+.promo__item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.advantages__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+.advantages__wraper {
+  text-align: center;
+}
+.advantages__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 70px;
+}
+.advantages__title:first-child {
+  padding-top: 53px;
+}
+.advantages__list {
+  background-color: #f2f2f2;
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
+.advantages__decription {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.aside__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+.aside__decription {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+.aside__link {
+  color: #d22856;
+  text-decoration: underline;
+}
+.advantages__aside {
+  display: none;
+}
+.reviews-wrapper {
+  text-align: center;
+  padding-top: 50px;
+}
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 31px;
+}
+.reviews__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
+.reviews__item {
+  margin: 0;
+}
+.reviews__toggles {
+  padding-bottom: 60px;
+}
+.tariffs {
+  background-color: #f2f2f2;
+}
+.tariffs__list {
+  background-color: #1d2631;
+  color: #ffffff;
+  text-align: center;
+}
+.tariffs__titel {
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+.tariffs__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+.tatiffs__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.tariffs__toggles {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 49px;
+}
+.tariffs__inner-anlim,
+.tariffs__inner-baza {
+  display: none;
+}
+.page-footer__wrapper {
+  text-align: center;
+}
+.page-footer__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  padding-top: 47px;
+  padding-bottom: 45px;
+}
+.page-footer__login {
+  padding-top: 40px;
+  padding-bottom: 41px;
+  display: block;
+}
+.contacts__item p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 35px;
+  padding-bottom: 13px;
+  margin: 0;
+}
+.contacts__item a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+}
+.contacts__item .contacts__item-link {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+}
+.page-footer img {
+  padding-top: 45px;
+}
+.social a {
+  color: inherit;
+}
+.copyright__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 53px;
+}
+.copyright__link {
+  color: inherit;
+}
+.form__title {
+  padding-top: 54px;
+  padding-bottom: 55px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.form__color-wrapper {
+  min-width: 320px;
+}
+.quest p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+.quest label {
+  padding-left: 23px;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+.quest__item {
+  border: 2px solid #e5e5e5;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-right: 80px;
+  margin-top: 17px;
+}
+input::-webkit-input-placeholder {
+  color: #283645;
+  padding-left: 20px;
+}
+.quest__header {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center;
+  padding-bottom: 55px;
+  padding-top: 42px;
+  margin: 0;
+}
+.quest__container {
+  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
