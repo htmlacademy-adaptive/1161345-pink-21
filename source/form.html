@@ -69,74 +69,73 @@
                 <input class="quest__item" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
               </p>
             </fieldset>
-          <h3 class="quest__header">Ваши безбашенные<br>достижения в путешествии</h3>
-          <fieldset class="quest__list">
-            <ul class="list-reset">
-              <li class="quest__checkbox">
-                <input class="quest__checkbox-input" type="checkbox" id="shark" checked>
-                <label for="shark">Сделал селфи с акулой</label>
-              </li>
-              <li class="quest__checkbox">
-                <input class="quest__checkbox-input" type="checkbox" id="beach" checked>
-                <label for="beach">Обгорел на пляже</label>
-              </li>
-              <li class="quest__checkbox">
-                <input class="quest__checkbox-input" type="checkbox" id="Chuck-Norris">
-                <label for="Chuck-Norris">Видел Чака Норриса</label>
-              </li>
-              <li class="quest__checkbox">
-                <input class="quest__checkbox-input" type="checkbox" id="souvenirs">
-                <label for="souvenirs">Накупил сувениров</label>
-              </li>
-              <li class="quest__checkbox">
-                <input class="quest__checkbox--input" type="checkbox" id="tower" checked>
-                <label for="tower">Удержал башню</label>
-              </li>
-              <li class="quest__checkbox">
-                <input class="quest__checkbox--input" type="checkbox" id="hotel">
-                <label for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+            <h3 class="quest__header">Ваши безбашенные<br>достижения в путешествии</h3>
+            <fieldset>
+              <ul class="quest__list list-reset">
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox-input" type="checkbox" id="shark" checked>
+                  <label for="shark">Сделал селфи с акулой</label>
+                </li>
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox-input" type="checkbox" id="beach" checked>
+                  <label for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox-input" type="checkbox" id="Chuck-Norris">
+                  <label for="Chuck-Norris">Видел Чака Норриса</label>
+                </li>
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox-input" type="checkbox" id="souvenirs">
+                  <label for="souvenirs">Накупил сувениров</label>
+                </li>
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox--input" type="checkbox" id="tower" checked>
+                  <label for="tower">Удержал башню</label>
+                </li>
+                <li class="quest__checkbox-item">
+                  <input class="quest__checkbox--input" type="checkbox" id="hotel">
+                  <label for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="visually-hidden">Контакты</legend>
+              <p>
+                <label for="number-tel">Номер телефона</label>
+                <input class="quest__item" type="number" id="number-tel" name="phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p>
+                <label for="email">Адрес почты</label>
+                <input class="quest__item" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              </p>
+            </fieldset>
+            <h3 class="quest__header">С каким приложением путешествовали?</h3>
+            <fieldset>
+              <ul class="quest__list list-reset">
+                <li class="quest__radio-item">
+                  <input class="quest__radio--input" type="radio" name="system" id="filter-IOS" value="IOS">
+                  <label for="filter-IOS">Pink для IOS</label>
+                </li>
+                <li class="quest__radio-item">
+                  <input class="quest__radio--input" type="radio" name="system" id="filter-Android" value="Android">
+                  <label for="filter-Android">Pink на Android</label>
+                </li>
+                <li class="quest__radio-item">
+                  <input class="quest__radio--input" type="radio" name="system" id="filter-Windows" value="Windows">
+                  <label for="filter-Windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+            <h3 class="quest__header">Опишите свои эмоции</h3>
+            <fieldset>
+              <p>
+                <textarea name="comment" rows="4" id="feedback-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </p>
+            </fieldset>
+            <button class="quest__button button" type="submit">Отправить форму</button>
+            <p class="quest__text">* — обязательные поля</p>
+          </form>
         </div>
-        <fieldset>
-          <legend class="visually-hidden">Контакты</legend>
-          <p>
-            <label for="number-tel">Номер телефона</label>
-            <input class="quest__contacts" type="number" id="number-tel" name="phone" placeholder="Номер, пожалуйста">
-          </p>
-          <p>
-            <label for="email">Адрес почты</label>
-            <input class="quest__contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>С каким приложением путешествовали?</legend>
-          <ul class="list-reset">
-            <li>
-              <input class="quest__radio-input" type="radio" name="system" id="filter-IOS" value="IOS">
-              <label for="filter-IOS">Pink для IOS</label>
-            </li>
-            <li>
-              <input class="quest__radio--input" type="radio" name="system" id="filter-Android" value="Android">
-              <label for="filter-Android">Pink на Android</label>
-            </li>
-            <li>
-              <input class="quest__radio--input" type="radio" name="system" id="filter-Windows" value="Windows">
-              <label for="filter-Windows">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции</legend>
-          <p>
-            <textarea name="comment" rows="4" id="feedback-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </p>
-        </fieldset>
-        <button type="submit" class="quest__button">Отправить форму</button>
-        <p class="quest__text">* — обязательные поля</p>
-        </form>
-      </div>
       </div>
     </section>
   </main>
@@ -146,7 +145,7 @@
       <div class="page-footer__wrapper">
         <h2 class="visually-hidden">Мы в соц сетях</h2>
         <a class="footer__login" href="index.html" aria-label="Перейти на главную страницу">
-          <img src="" width="145" height="40" alt="Pink">
+          <img src="img/logotype_mobile_footer.svg" width="145" height="40" alt="Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list list-reset">
@@ -164,6 +163,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">HTML Academy</a>
+          <img src="img/html_academy.svg" width="27" height="34" alt="Логотип">
         </div>
       </div>
     </div>

@@ -17,11 +17,11 @@
   padding-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
-  padding-right: 80px;
+  padding-right: 83px;
   margin-top: 17px;
 }
 
-input::-webkit-input-placeholder {
+.form__quest input::-webkit-input-placeholder {
   color: @base-text;
   padding-left: 20px;
 }
@@ -35,14 +35,50 @@ input::-webkit-input-placeholder {
   text-transform: uppercase;
   color: @bright-element;
   text-align: center;
-  padding-bottom: 55px;
   padding-top: 42px;
   margin: 0;
 }
 
-.quest__container {
-  background-color: @admission;
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+.quest__checkbox-item {
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
+.quest__checkbox-item:last-child {
+  padding-bottom: 55px;
+}
+
+.quest__checkbox-item:first-child {
+  padding-top: 55px;
+}
+
+// Radio
+
+.quest__radio-item {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+.quest__radio-item:first-child {
+  padding-top: 52px;
+}
+
+.quest__radio-item:last-child {
+  padding-bottom: 54px;
+}
+
+// Textarea
+
+.form__quest textarea {
+  min-width: 272px;
+  border: 2px solid #e5e5e5;
+  padding: 23px 0;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 17px;
+}
+
+.form__quest textarea::-webkit-input-placeholder {
+  color: @base-text;
+  padding-left: 20px;
 }
