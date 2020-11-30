@@ -12,13 +12,15 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
-        <img src="img/pink.svg" width="74" height="23" alt="Pink">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigation__wrapper">
+    <div class="page-header__inner-ctn">
+      <div class="page-header__menu--over">
+        <div class="page-header__top-line">
+          <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
+            <img src="img/pink.svg" width="74" height="23" alt="Pink">
+          </a>
+        </div>
+        <nav class="main-navigation main-navigation--show">
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-navigation__list list-reset">
             <li class="main-navigation__list-item">
               <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
@@ -33,13 +35,14 @@
               <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
-      <div class="page-header__promo promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__header">Конкурс на самое безбашенное<br>путешествие с Пинк</h2>
-        </div>
+        </nav>
       </div>
+    </div>
+    <div class="page-header__promo promo">
+      <div class="promo__wrapper">
+        <h2 class="promo__header">Конкурс на самое безбашенное<br>путешествие с Пинк</h2>
+      </div>
+    </div>
     </div>
   </header>
 
