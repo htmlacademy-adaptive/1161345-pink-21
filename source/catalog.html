@@ -12,31 +12,36 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
-        <img src="img/pink.svg" width="74" height="23" alt="Pink">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list list-reset">
-            <li class="main-navigation__list-item">
-              <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
-            </li>
-            <li class="main-navigation__list-item">
-              <a href="#" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
-            </li>
-            <li class="main-navigation__list-item">
-              <a href="form.html" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
-            </li>
-            <li class="main-navigation__list-item">
-              <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
-            </li>
-          </ul>
+    <div class="page-header__inner-ctn">
+      <div class="page-header__menu">
+        <div class="container">
+          <div class="page-header__top-line page-header__top-line--over">
+            <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
+              <img src="img/pink.svg" width="74" height="23" alt="Pink">
+            </a>
+            <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <nav class="main-navigation main-navigation--show">
+            <ul class="main-navigation__list list-reset">
+              <li class="main-navigation__list-item">
+                <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
+              </li>
+              <li class="main-navigation__list-item">
+                <a href="#" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
+              </li>
+              <li class="main-navigation__list-item">
+                <a href="form.html" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
+              </li>
+              <li class="main-navigation__list-item">
+                <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
-      <div class="page-header__promo promo">
-        <div class="promo__wrapper">
+      </div>
+    </div>
+    <div class="page-header__promo">
+      <div class="promo__wrapper">
         <h2 class="promo__header promo__header-catalog">Фотографии пользователей</h2>
       </div>
     </div>
