@@ -1,10 +1,32 @@
 .page-header {
-  background-color: @base-text;
-  color: @background;
+  background-color: #283645;
+  color: #ffffff;
 }
 
 .page-header a {
   color: inherit;
+}
+
+.page-header__menu {
+  position: relative;
+}
+
+.page-header__promo {
+  background-color: @header;
+  color: @background;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__promo-index{
+  background-color: @header;
+  color: @background;
+  background-image: url("../img/group.png"), url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: left, center;
+  background-size: 300px, cover;
 }
 
 // Logo
