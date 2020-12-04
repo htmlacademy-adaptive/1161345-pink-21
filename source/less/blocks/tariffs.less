@@ -2,6 +2,14 @@
   background-color: @base-text;
   color: @background;
   text-align: center;
+  margin: 0;
+}
+
+.tariffs {
+  background-image: url("../img/grey_background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 506px;
 }
 
 .tariffs__titel {
@@ -19,17 +27,29 @@
   margin-left: 0;
 }
 
+.tariffs__items {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .tatiffs__item {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  border: 2px solid @border-form;
+  border-radius: 1px 0 0 0;
 }
 
 .tariffs__toggles {
   text-align: center;
   padding-top: 45px;
   padding-bottom: 49px;
+}
+
+.tariffs-wrapper {
+  padding-top: 83px;
 }
