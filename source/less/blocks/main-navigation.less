@@ -13,3 +13,25 @@
   padding-top: 18px;
   padding-bottom: 18px;
 }
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .main-navigation__list-item:not(:last-child) {
+    padding-right: 39px;
+  }
+  .main-navigation__list-item:not(:first-child) {
+    padding-left: 39px;
+  }
+}
+
+// Toggle
+
+.main-navigation__toggle {
+  display: none;
+}

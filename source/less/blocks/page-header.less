@@ -1,6 +1,6 @@
 .page-header {
-  background-color: #283645;
-  color: #ffffff;
+  background-color: @base-text;
+  color: @background;
 }
 
 .page-header a {
@@ -9,6 +9,13 @@
 
 .page-header__menu {
   position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__menu {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-header__promo {
