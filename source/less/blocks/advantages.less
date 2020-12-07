@@ -6,7 +6,7 @@
   background-image: url("../img/Group_1.png"), url("../img/grey_background.png");
   background-repeat: no-repeat;
   min-height: 1008px;
-  background-size: 157px 320px, 100% 828px;
+  background-size: 157px 320px, 100% 100%;
   background-position: 77px 755px, 0 180px;
 }
 
@@ -40,4 +40,31 @@
 
 .advantages__slogan-bottom {
   margin-bottom: 82px;
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: flex;
+  }
+
+  .advantages__item {
+    margin-top: 366px;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .advantages {
+    background-position: 895px 259px, 0 180px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    text-align: left;
+  }
+
+  .advantages {
+    background-position: 895px 259px, 0 180px;
+    background-size: 157px 320px, 100% 45%;
+  }
 }
