@@ -23,7 +23,7 @@
 .page-header__promo-index {
   background-color: @header;
   color: @background;
-  background-image: url("../img/group.png"), url("../img/back-mobile.png");
+  background-image: url("../img/mobile.png"), url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: left bottom, center center;
   background-size: 320px 286px, cover;
@@ -47,10 +47,13 @@
   }
 
   .page-header__promo-index {
+    background-image: url("../img/mobile_desk.png"),
+      url("../img/back_desktop.png");
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
     background-position: 830px bottom, center center;
+    background-size: 1050px 645px, cover;
   }
 
   .page-header__promo-dowload-app {
