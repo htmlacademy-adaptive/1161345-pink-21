@@ -41,6 +41,7 @@
   padding-bottom: 25px;
   padding-left: 20px;
   border: 2px solid @border-form;
+  border-collapse: collapse;
   border-radius: 1px 0 0 0;
 }
 
@@ -52,4 +53,41 @@
 
 .tariffs-wrapper {
   padding-top: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  /*.tariffs__inner {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .tariffs__list {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+*/
+  .tariffs__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs__inner {
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr 1fr;
+  }
+
+  .tariffs__list {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    max-width: 233px;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
+
+  .tariffs__items-none {
+    display: none;
+  }
 }
