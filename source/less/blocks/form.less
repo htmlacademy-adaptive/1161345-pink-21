@@ -4,6 +4,7 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  color: @header-text;
 }
 
 .form__quest fieldset {
@@ -31,4 +32,17 @@
 .form__quest textarea::-webkit-input-placeholder {
   color: @base-text;
   padding-left: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .form__quest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quest__inner-radio {
+    grid-column-start: 2;
+    grid-row: 1;
+    background-color: @background;
+  }
 }

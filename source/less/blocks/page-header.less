@@ -36,10 +36,6 @@
     justify-content: space-between;
   }
 
-  .page-header__promo-index {
-    background-position: 830px bottom, center center;
-  }
-
   .page-header {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
@@ -54,6 +50,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
+    background-position: 830px bottom, center center;
   }
 
   .page-header__promo-dowload-app {
@@ -63,8 +60,11 @@
     padding-top: 137px;
   }
 
-  .page-header__promo-index {
-    
+  .page-header__promo {
+    background-image: url("../img/back_desktop.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-position: 0 -139px;
   }
 }
 
@@ -79,6 +79,13 @@
   }
 
   .page-header__inner-ctn {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .page-header__promo {
+    background-image: url("../img/back_tablet.png");
+    background-position: 0 -44px;
     grid-column-start: 1;
     grid-column-end: 4;
   }

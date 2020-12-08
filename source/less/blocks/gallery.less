@@ -63,3 +63,41 @@
   width: 100%;
   background-color: @border-form;
 }
+
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
+    justify-content: space-around;
+  }
+
+  .gallery__item {
+    max-width: 300px;
+  }
+
+  .gallery__author-info {
+    min-height: 155px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-width: 620px;
+    justify-content: space-around;
+  }
+
+  .gallery__item {
+    max-width: 300px;
+  }
+
+  .gallery__author-info {
+    min-height: 155px;
+  }
+}

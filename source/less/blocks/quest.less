@@ -2,13 +2,13 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  color: @bright-element;
   text-transform: uppercase;
 }
 
 .quest label {
   padding-left: 23px;
   padding-bottom: 17px;
+  color: @bright-element;
 }
 
 .quest__item {
@@ -52,7 +52,6 @@
   margin-top: 30px;
 }
 
-
 .quest__radio-item {
   padding-top: 38px;
 }
@@ -63,4 +62,38 @@
 
 .quest__radio-item:last-child {
   padding-bottom: 54px;
+}
+
+@media (min-width: @desktop-width) {
+  .quest__inner-backgraound {
+    background-color: @background;
+  }
+
+  .quest__inner-checkbox {
+    grid-row: 3;
+  }
+
+  .quest_textarea {
+    grid-row: 4;
+  }
+
+  .quest_contacts {
+    display: flex;
+    margin-left: 330px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .quest p {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .quest label {
+    margin-right: 20px;
+  }
+
+  .quest__inner-backgraound {
+    background-color: @background;
+  }
 }
