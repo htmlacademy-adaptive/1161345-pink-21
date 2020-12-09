@@ -20,6 +20,10 @@
   min-width: 236px;
 }
 
+.quest__about {
+  padding: 0 20px;
+}
+
 // Checkbox
 
 .quest__header {
@@ -47,6 +51,12 @@
 
 // Radio
 
+.quest__list,
+.quest__list-radio,
+.quest__header {
+  padding: 0 20px;
+}
+
 .quest__inner-backgraound {
   background-color: @admission;
   margin-top: 30px;
@@ -64,23 +74,10 @@
   padding-bottom: 54px;
 }
 
-@media (min-width: @desktop-width) {
-  .quest__inner-backgraound {
-    background-color: @background;
-  }
+// Contacts
 
-  .quest__inner-checkbox {
-    grid-row: 3;
-  }
-
-  .quest_textarea {
-    grid-row: 4;
-  }
-
-  .quest_contacts {
-    display: flex;
-    margin-left: 330px;
-  }
+.quest_contacts {
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,9 +88,87 @@
 
   .quest label {
     margin-right: 20px;
+    padding-left: 0;
   }
 
   .quest__inner-backgraound {
     background-color: @background;
+  }
+
+  .quest__item {
+    min-width: 496px;
+    padding: 23px 0 23px 20px;
+  }
+
+  .quest__about {
+    order: 1;
+  }
+
+  .quest__inner-checkbox {
+    order: 4;
+  }
+
+  .quest_contacts {
+    order: 3;
+  }
+
+  .quest__radio {
+    order: 2;
+  }
+
+  .quest_textarea {
+    order: 5;
+  }
+
+  .quest__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .quest__inner-backgraound {
+    background-color: @background;
+  }
+
+  .quest__about {
+    padding-left: 130px;
+  }
+
+  .quest__radio {
+    padding-right: 130px;
+  }
+
+  .quest_contacts {
+    width: 100%;
+
+    margin-top: 40px;
+  }
+
+  .quest_contact-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .quest__inner-checkbox {
+    padding: 0 130px;
+    width: 100%;
+  }
+
+  .quest__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .quest__checkbox-item {
+    min-width: 250px;
+  }
+
+  .form__quest textarea {
+    min-width: 816px;
+    margin-left: 60px;
   }
 }
