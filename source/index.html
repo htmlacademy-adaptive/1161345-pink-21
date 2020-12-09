@@ -45,9 +45,8 @@
       <h2 class="visually-hidden">Скачать мобильное приложение Pink</h2>
       <p class="promo__slogan">Взгляните на жизнь<br>иначе!</p>
     </div>
-    </div>
-    <div class="container">
-      <div class="page-header__promo-dowload-app">
+    <div class="page-header__promo-dowload-app">
+      <div class="container">
         <a class="promo__buttton-to-all" href="https://www.apple.com/ru/app-store/" aria-label="Перейти на APP Store для скачивания приложения на Apple" target="_blank">Скачать приложение</a>
         <ul class="promo__list list-reset">
           <li class="promo__item">
@@ -69,6 +68,8 @@
         <p class="promo__intro">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
+    </div>
+    </div>
   </header>
 
   <main class="page-main">
@@ -78,9 +79,9 @@
     <section class="advantages">
       <div class="container">
         <div class="advantages__wraper">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <p class="advantages__slogan">Устали от серости<br>мегаполиса?</p>
-            <p class="advantages__slogan advantages__slogan-bottom">Нам есть, что вам<br>предложить!</p>
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="advantages__slogan">Устали от серости<br>мегаполиса?</p>
+          <p class="advantages__slogan advantages__slogan-bottom">Нам есть, что вам<br>предложить!</p>
           <ul class="advantages__list list-reset">
             <li class="advantages__item advantages__item--raises">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -95,6 +96,8 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+        </div>
+      </div>
           <aside class="advantages__aside">
             <p class="aside__title">Эффект на 24 часа!</p>
             <p class="aside__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -127,54 +130,89 @@
     </section>
 
     <section class="tariffs">
-        <div class="tariffs-wrapper slider">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <div class="tariffs__inner">
-            <div class="tariffs__inner tariffs__inner-baza slider__item">
-              <dl class="tariffs__list">
-                <dt class="tariffs__titel">База</dt>
-                <dd class="tariffs__price">1,99 usd</dd>
-              </dl>
-              <ul class="tariffs__items list-reset">
-                <li class="tatiffs__item tatiffs__item--pink">Розовый фильтр</li>
-                <li class="tatiffs__item tatiffs__item--smile">Смайлики</li>
-                <li class="tatiffs__item tatiffs--comment">Комментарии</li>
-              </ul>
-            </div>
-            <div class="tariffs__inner tariffs__inner-standart slider__item">
-              <dl class="tariffs__list">
-                <dt class="tariffs__titel">Стандарт</dt>
-                <dd class="tariffs__price">3,99 usd</dd>
-              </dl>
-              <ul class="tariffs__items list-reset">
-                <li class="tatiffs__item tatiffs__item--pink">Розовый фильтр</li>
-                <li class="tatiffs__item tatiffs__item--smile">Смайлики</li>
-                <li class="tatiffs__item tatiffs--comment">Комментарии</li>
-              </ul>
-            </div>
-            <div class="tariffs__inner tariffs__inner-anlim slider__item">
-              <dl class="tariffs__list">
-                <dt class="tariffs__titel">Анлим</dt>
-                <dd class="tariffs__price">9,99 usd</dd>
-              </dl>
-              <ul class="tariffs__items list-reset">
-                <li class="tatiffs__item tatiffs__item--pink">Розовый фильтр</li>
-                <li class="tatiffs__item tatiffs__item--smile">Смайлики</li>
-                <li class="tatiffs__item tatiffs--comment">Комментарии</li>
-              </ul>
-            </div>
+      <div class="tariffs-wrapper slider">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariffs__inner">
+          <div class="tariffs__inner-item tariffs__display-none">
+            <dl class="tariffs__list tariffs__transporent">
+              <dt class="tariffs__titel ">База</dt>
+              <dd class="tariffs__price ">1,99 usd</dd>
+            </dl>
+            <ul class="tariffs__items list-reset">
+              <li class="tatiffs__item-main tatiffs__item--pink">
+                <p>Розовый фильтр</p>
+              </li>
+              <li class="tatiffs__item-main tatiffs__item--smile">
+                <p>Смайлики</p>
+              </li>
+              <li class="tatiffs__item-main tatiffs--comment">
+                <p>Комментарии</p>
+              </li>
+            </ul>
           </div>
-          <p class="tariffs__toggles slider__toggles">
-            <button class="slider__toggle" type="button" aria-label="Перейти к первому слайду">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button" aria-label="Перейти ко второму слайду">2</button>
-            <button class="slider__toggle" type="button" aria-label="Перейти к третьему слайду">3</button>
-          </p>
+          <div class="tariffs__inner-item tariffs__inner-baza slider__item">
+            <dl class="tariffs__list">
+              <dt class="tariffs__titel">База</dt>
+              <dd class="tariffs__price">1,99 usd</dd>
+            </dl>
+            <ul class="tariffs__items tariffs__items-none list-reset">
+              <li class="tatiffs__item tatiffs__item--pink">
+                <p>Розовый фильтр</p>
+              </li>
+              <li class="tatiffs__item tatiffs__item--smile">
+                <p>Смайлики</p>
+              </li>
+              <li class="tatiffs__item tatiffs--comment">
+                <p>Комментарии</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tariffs__inner-item tariffs__inner-standart slider__item">
+            <dl class="tariffs__list">
+              <dt class="tariffs__titel">Стандарт</dt>
+              <dd class="tariffs__price">3,99 usd</dd>
+            </dl>
+            <ul class="tariffs__items tariffs__items-none list-reset">
+              <li class="tatiffs__item tatiffs__item--pink">
+                <p>Розовый фильтр</p>
+              </li>
+              <li class="tatiffs__item tatiffs__item--smile">
+                <p>Смайлики</p>
+              </li>
+              <li class="tatiffs__item tatiffs--comment">
+                <p>Комментарии</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tariffs__inner-item tariffs__inner-anlim slider__item">
+            <dl class="tariffs__list">
+              <dt class="tariffs__titel">Анлим</dt>
+              <dd class="tariffs__price">9,99 usd</dd>
+            </dl>
+            <ul class="tariffs__items tariffs__items-none list-reset">
+              <li class="tatiffs__item tatiffs__item--pink">
+                <p>Розовый фильтр</p>
+              </li>
+              <li class="tatiffs__item tatiffs__item--smile">
+                <p>Смайлики</p>
+              </li>
+              <li class="tatiffs__item tatiffs--comment">
+                <p>Комментарии</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <p class="tariffs__toggles slider__toggles">
+          <button class="slider__toggle" type="button" aria-label="Перейти к первому слайду">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Перейти ко второму слайду">2</button>
+          <button class="slider__toggle" type="button" aria-label="Перейти к третьему слайду">3</button>
+        </p>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__inner">
       <h2 class="visually-hidden"> Наши контакты</h2>
       <p class="page-footer__slogan">Остались вопросы? Свяжитесь с нами!</p>
       <div class="page-footer__contacts">
@@ -192,32 +230,35 @@
             <a href="#" aria-label="Показаь на карте">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img src="img/map.png" width="320" height="200" alt="Карта">
+        <div class="page-footer__map">
+          <img src="../img/map_desk.png" width="320" height="200" alt="Карта">
+        </div>
       </div>
-      <map>
-      </map>
-      <a class="page-footer__login" aria-label="Перейти на главную страницу">
-        <img src="img/logotype_mobile_footer.svg" width="145" height="40" alt="Pink">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list list-reset">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru" aria-label="Перейти на нашу страницу в twitter">Мы в Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Перейти на нашу страницу в facebook">Мы в Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/" aria-label="Перейти на нашу страницу в youtube">Мы в YouTube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
-          <img src="img/html_academy.svg" width="27" height="34" alt="Логотип">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__login" aria-label="Перейти на главную страницу">
+          <img src="img/logotype_mobile_footer.svg" width="145" height="40" alt="Pink">
         </a>
+        <div class="page-footer__social social">
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru" aria-label="Перейти на нашу страницу в twitter">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Перейти на нашу страницу в facebook">Мы в Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/" aria-label="Перейти на нашу страницу в youtube">Мы в YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
+            <img src="img/html_academy.svg" width="27" height="34" alt="Логотип">
+          </a>
+        </div>
       </div>
+    </div>
     </div>
   </footer>
 </body>

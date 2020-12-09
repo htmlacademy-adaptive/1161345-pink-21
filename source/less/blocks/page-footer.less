@@ -1,4 +1,4 @@
-.page-footer__wrapper {
+.page-footer__inner {
   text-align: center;
 }
 
@@ -14,8 +14,40 @@
   padding-top: 40px;
   padding-bottom: 41px;
   display: block;
+  text-align: center;
 }
 
 .page-footer img {
   padding-top: 45px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-footer__slogan {
+    font-size: 40px;
+    line-height: 54px;
+    padding: 0 49px;
+  }
 }

@@ -21,3 +21,31 @@
   line-height: 33px;
   color: @bright-element;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item:nth-child(3n) {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 130px;
+  }
+
+  .contacts__item {
+    width: 100%;
+  }
+
+  .contacts__item:nth-child(2n) {
+    order: 2;
+  }
+}
