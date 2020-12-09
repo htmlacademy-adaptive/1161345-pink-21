@@ -30,50 +30,20 @@
   min-height: 396px;
 }
 
-@media (min-width: @desktop-width) {
-  .page-header__menu {
-    display: flex;
-    justify-content: space-between;
-  }
+// Logo
 
-  .page-header {
-    display: grid;
-    grid-template-columns: max-content 1fr max-content;
-  }
-
-  .page-header__inner-ctn {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .page-header__promo-index {
-    background-image: url("../img/mobile_desk.png"),
-      url("../img/back_desktop.png");
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 2;
-    background-position: 830px bottom, center center;
-    background-size: 1050px 645px, cover;
-  }
-
-  .page-header__promo-dowload-app {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 2;
-    padding-top: 137px;
-  }
-
-  .page-header__promo {
-    background-image: url("../img/back_desktop.png");
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-position: 0 -139px;
-  }
+.page-header__logo {
+  margin-top: 0;
+  padding-top: 22px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__promo-index {
-    background-position: 830px bottom, center center;
+    background-image: url("../img/mobile_table.png"),
+      url("../img/back_tablet.png");
+    background-position: 1px bottom, center center;
+    background-size: 660px 545px, cover;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
@@ -104,10 +74,43 @@
   }
 }
 
-// Logo
+@media (min-width: @desktop-width) {
+  .page-header__menu {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.page-header__logo {
-  margin-top: 0;
-  padding-top: 22px;
-  display: block;
+  .page-header {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+  }
+
+  .page-header__inner-ctn {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .page-header__promo-index {
+    background-image: url("../img/mobile_desk.png"),
+      url("../img/back_desktop.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    background-position: 192px bottom, center center;
+    background-size: 1050px 645px, cover;
+  }
+
+  .page-header__promo-dowload-app {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    padding-top: 137px;
+  }
+
+  .page-header__promo {
+    background-image: url("../img/back_desktop.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-position: 0 -139px;
+  }
 }

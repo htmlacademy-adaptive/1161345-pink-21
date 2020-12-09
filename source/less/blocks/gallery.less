@@ -64,13 +64,13 @@
   background-color: @border-form;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 940px;
     margin: 0 auto;
-    padding: 0 130px;
+    padding: 0 20px;
+    min-width: 620px;
     justify-content: space-around;
   }
 
@@ -83,13 +83,13 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 0 20px;
-    min-width: 620px;
+    padding: 0 130px;
     justify-content: space-around;
   }
 

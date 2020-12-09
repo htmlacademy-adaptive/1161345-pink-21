@@ -15,16 +15,6 @@ a.aside__link {
   text-decoration: underline;
 }
 
-@media (min-width: @desktop-width) {
-  .advantages__aside {
-    display: block;
-    text-align: left;
-    margin-left: 370px;
-    margin-top: 174px;
-    padding-bottom: 120px;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .advantages__aside {
     display: block;
@@ -62,8 +52,16 @@ a.aside__link {
   }
 
   .reviews__text {
-    //не работает
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__aside {
+    background-color: @admission;
+    background-image: url("../img/time_desktop.png");
+    background-position: 161px 149px;
+    padding-left: 440px;
   }
 }
