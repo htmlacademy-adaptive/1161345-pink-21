@@ -81,18 +81,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .quest p {
-    display: flex;
-    align-items: baseline;
-  }
-
   .quest label {
     margin-right: 20px;
     padding-left: 0;
   }
 
+  .quest__about-inner {
+    display: flex;
+    align-items: baseline;
+  }
+
   .quest__inner-backgraound {
     background-color: @background;
+    padding: 0 20px;
   }
 
   .quest__item {
@@ -110,6 +111,7 @@
 
   .quest_contacts {
     order: 3;
+    margin-top: 70px;
   }
 
   .quest__radio {
@@ -118,31 +120,63 @@
 
   .quest_textarea {
     order: 5;
+    margin-top: 65px;
   }
 
   .quest__footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .quest p {
+    text-align: center;
+  }
+
+  .quest__list,
+  .quest__list-radio {
+    border: 2px solid @border-form;
+    padding-left: 60px;
+  }
+
+  .quest_textarea-wrapper {
+    border: 2px solid @border-form;
+  }
+
+  p.quest__text {
+    border: none;
+  }
+
+  fieldset.quest_contact-inner {
+    border: 2px solid @border-form;
   }
 }
 
 @media (min-width: @desktop-width) {
   .quest__inner-backgraound {
     background-color: @background;
+    padding: 0;
   }
 
-  .quest__about {
-    padding-left: 130px;
+  .quest__inner-radio {
+    margin-left: 74px;
   }
 
-  .quest__radio {
-    padding-right: 130px;
+  .quest__item {
+    min-width: 312px;
+    max-width: 312px;
+    padding: 23px 0 23px 20px;
+  }
+
+  .quest__list-radio {
+    padding-bottom: 28px;
+    padding-right: 0;
   }
 
   .quest_contacts {
     width: 100%;
-
     margin-top: 40px;
+    padding: 0 130px;
   }
 
   .quest_contact-inner {

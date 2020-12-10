@@ -39,12 +39,18 @@
 @media (min-width: @tablet-width) {
   .form__title {
     margin-top: 100px;
-    margin-bottom: 68px;
+    margin-bottom: 28px;
+    font-size: 18px;
   }
 
   .form__quest {
     display: flex;
     flex-direction: column;
+  }
+
+  .form__quest textarea {
+    min-width: 496px;
+    border: 2px solid @border-form;
   }
 }
 
@@ -59,5 +65,10 @@
     grid-column-start: 2;
     grid-row: 1;
     background-color: @background;
+  }
+
+  .form__quest textarea {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
