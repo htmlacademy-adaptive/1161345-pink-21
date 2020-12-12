@@ -1,51 +1,40 @@
-.aside__title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+.aside__description {
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
-.aside__decription {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+.aside__title {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: @header-text;
+    max-width: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
 }
 
 a.aside__link {
   color: @bright-element;
   text-decoration: underline;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__aside {
-    display: block;
-    text-align: left;
-    padding-left: 310px;
-    padding-top: 174px;
-    background-image: url("../img/time.png");
-    background-repeat: no-repeat;
-    background-size: 238px 276px;
-    background-position: 45px 145px;
-  }
-
-  .aside__title {
-    font-size: 30px;
-    line-height: 36px;
-    color: @header-text;
-    max-width: 168px;
-  }
-
-  a.aside__link {
+  @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 24px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .advantages__aside {
-    background-color: @admission;
-    background-image: url("../img/time_desktop.png");
-    background-position: 169px 140px;
-    padding-left: 440px;
-    padding-bottom: 120px;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
