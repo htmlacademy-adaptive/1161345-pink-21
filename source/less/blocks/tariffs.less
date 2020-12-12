@@ -16,6 +16,19 @@
   padding-top: 19px;
   padding-bottom: 15px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.tatiffs__item p {
+  @media (min-width: @tablet-width) {
+    color: transparent;
+  }
 }
 
 .tariffs__price {
@@ -88,20 +101,11 @@
     padding-bottom: 16px;
   }
 
-  .tariffs__titel {
-    padding-bottom: 0;
-  }
-
   .tariffs__transporent {
     background-color: transparent;
     color: transparent;
   }
-
-  .tatiffs__item p {
-    color: transparent;
-  }
 }
-
 
 @media (min-width: @desktop-width) {
   .tariffs__inner {
