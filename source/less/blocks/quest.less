@@ -13,11 +13,33 @@
 
 .quest__item {
   border: 2px solid @border-form;
+  border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
   padding: 23px 20px;
   margin-top: 17px;
   min-width: 236px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 496px;
+    padding: 23px 0 23px 20px;
+    margin-top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 312px;
+    max-width: 312px;
+    padding: 23px 0 23px 20px;
+  }
+}
+
+.quest__item:hover {
+  border: 2px solid @base-text;
+}
+
+.quest__item:focus {
+  border: 2px solid @bright-element;
 }
 
 .quest__about {
@@ -59,7 +81,19 @@
 
 .quest__inner-backgraound {
   background-color: @admission;
-  margin-top: 30px;
+  margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @background;
+    padding: 0 20px;
+    margin-top: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @background;
+    padding: 0;
+    margin-top: 0;
+  }
 }
 
 .quest__radio-item {
@@ -72,6 +106,10 @@
 
 .quest__radio-item:last-child {
   padding-bottom: 54px;
+}
+
+.quest__radio--input:hover {
+  color: @base-text;
 }
 
 // Contacts
@@ -89,16 +127,6 @@
   .quest__about-inner {
     display: flex;
     align-items: baseline;
-  }
-
-  .quest__inner-backgraound {
-    background-color: @background;
-    padding: 0 20px;
-  }
-
-  .quest__item {
-    min-width: 496px;
-    padding: 23px 0 23px 20px;
   }
 
   .quest__about {
@@ -153,19 +181,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .quest__inner-backgraound {
-    background-color: @background;
-    padding: 0;
-  }
-
   .quest__inner-radio {
     margin-left: 74px;
-  }
-
-  .quest__item {
-    min-width: 312px;
-    max-width: 312px;
-    padding: 23px 0 23px 20px;
   }
 
   .quest__list-radio {

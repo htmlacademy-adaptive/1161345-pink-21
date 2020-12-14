@@ -1,12 +1,23 @@
 .form__title {
-  padding-top: 54px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 27px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: @header-text;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 0 20px;
+  }
 }
 
 .form__quest fieldset {
@@ -18,6 +29,19 @@
 .form__quest input::-webkit-input-placeholder {
   color: @base-text;
   padding-left: 20px;
+}
+
+.form__quest {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 42px;
+    }
+  }
 }
 
 // Textarea
@@ -37,17 +61,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__title {
-    margin-top: 100px;
-    margin-bottom: 28px;
-    font-size: 18px;
-  }
-
-  .form__quest {
-    display: flex;
-    flex-direction: column;
-  }
-
   .form__quest textarea {
     min-width: 496px;
     border: 2px solid @border-form;
@@ -55,12 +68,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__quest {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .quest__inner-radio {
     grid-column-start: 2;
     grid-row: 1;

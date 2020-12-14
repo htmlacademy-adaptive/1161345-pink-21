@@ -20,6 +20,7 @@
 }
 
 .main-navigation__list-item:active {
+  color: @background;
   opacity: 0.3;
 }
 
@@ -30,6 +31,30 @@
 
   @media (min-width: @desktop-width) {
     box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__form-active:before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 332px;
+    width: 85px;
+    height: 2px;
+    background-color: @background;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__catalog-active:before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 152px;
+    width: 109px;
+    height: 2px;
+    background-color: @background;
   }
 }
 
@@ -58,7 +83,7 @@
   display: block;
   width: 50px;
   height: 24px;
-  background-color: @background;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 }
@@ -67,4 +92,57 @@
   .main-navigation__toggle {
     display: none;
   }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background-color: @background;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle:hover::before,
+.main-navigation--opened .main-navigation__toggle:hover::after {
+  background-color: @bright-element;
+}
+
+.main-navigation--opened .main-navigation__toggle:active::before,
+.main-navigation--opened .main-navigation__toggle:active::after {
+  background-color: fade(@bright-element, 30%);
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: @background;
+  border-radius: 2px;
+  box-shadow: 0 8px 0 0 @background, 0 16px 0 0 @background;
+}
+
+.main-navigation--closed .main-navigation__toggle:hover::before {
+  background-color: @bright-element;
+  box-shadow: 0 8px 0 0 @bright-element, 0 16px 0 0 @bright-element;
+}
+
+.main-navigation--closed .main-navigation__toggle:active::before {
+  background-color: fade(@bright-element, 30%);
+  box-shadow: 0 8px 0 0 fade(@bright-element, 30%),
+    0 16px 0 0 fade(@bright-element, 30%);
 }
