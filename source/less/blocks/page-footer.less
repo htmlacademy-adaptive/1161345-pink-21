@@ -6,8 +6,23 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  padding-top: 47px;
-  padding-bottom: 45px;
+  padding-top: 23px;
+  padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+    padding: 0 49px;
+    margin-top: 55px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 74px;
+    margin-bottom: 61px;
+  }
 }
 
 .page-footer__login {
@@ -34,16 +49,13 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  .page-footer__slogan {
-    font-size: 40px;
-    line-height: 54px;
-    padding: 0 49px;
-  }
 }
 
-@media (min-width: @desktop-width) {
-  .page-footer__wrapper {
-    padding: 0 130px;
-  }
+/*.page-footer__map {
+  background-image: url("../img/triangle_white_footer.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: rebeccapurple;
+  z-index: 100;
 }
+*/

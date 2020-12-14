@@ -4,13 +4,34 @@
 
 .promo__slogan {
   margin: 0;
-  padding-top: 29px;
-  padding-bottom: 34px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  padding: 29px 20px 34px 20px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    margin-top: 102px;
+    text-align: center;
+    max-width: 300px;
+    padding: 0;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 114px;
+  }
 }
 
 .promo__header {
@@ -20,6 +41,14 @@
   margin: 0;
   padding-top: 36px;
   padding-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 81px;
+    margin-bottom: 74px;
+    padding: 0 20px;
+  }
 }
 
 .promo__header-catalog {
@@ -28,6 +57,15 @@
 
 .promo__intro {
   padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 59px;
+  }
 }
 
 .promo__buttton-to-all {
@@ -44,6 +82,11 @@
   text-align: center;
   display: inline-block;
   margin-top: 28px;
+  margin-bottom: 38px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 // Promo__list
@@ -62,45 +105,16 @@
 
 .promo__list {
   display: flex;
+  margin-bottom: 31px;
 }
 
-@media (min-width: @tablet-width) {
-  .promo__slogan {
-    font-size: 40px;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 73px;
-  }
-
-  .promo__intro {
-    font-size: 18px;
-  }
-
-  a.promo__buttton-to-all {
-    margin-top: 117px;
+a.promo__buttton-to-all {
+  @media (min-width: @tablet-width) {
+    margin-top: 170px;
     margin-bottom: 39px;
   }
 
-  .promo__header {
-    font-size: 50px;
-    line-height: 68px;
-    margin-top: 81px;
-    margin-bottom: 74px;
-    padding: 0 20px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo__slogan {
-    font-size: 50px;
-    line-height: 68px;
-    text-align: left;
-    padding-left: 130px;
-    max-width: 300px;
-    margin-top: 85px;
-  }
-
-  a.promo__buttton-to-all {
+  @media (min-width: @desktop-width) {
     margin-top: 245px;
     margin-bottom: 75px;
   }
