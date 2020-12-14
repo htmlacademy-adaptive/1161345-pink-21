@@ -1,3 +1,24 @@
+.tariffs .container {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.tariffs__inner-baza,
+.tariffs__inner-anlim {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .tariffs__list {
   background-color: @base-text;
   color: @background;
@@ -13,16 +34,11 @@
 }
 
 .tariffs__titel {
-  padding-top: 19px;
-  padding-bottom: 15px;
+  padding-top: 17px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-  }
 }
 
 .tatiffs__item p {
@@ -35,9 +51,14 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 17px;
   text-transform: uppercase;
   margin-left: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 25px;
+    font-size: 24px;
+  }
 }
 
 .tatiffs__item,
@@ -46,19 +67,27 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 25px;
   padding-left: 20px;
   border: 2px solid @border-form;
   border-collapse: collapse;
   border-radius: 1px 0 0 0;
   background-color: @background;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+    text-transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 0 20px;
+  }
 }
 
 .tariffs__toggles {
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 49px;
+  padding-top: 29px;
+  padding-bottom: 33px;
 }
 
 .tariffs-wrapper {
@@ -69,15 +98,22 @@
   display: none;
 }
 
+.tariffs__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-width: 153px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 233px;
+    padding-bottom: 90px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .tariffs__display-none {
     display: block;
-  }
-
-  .tariffs__inner {
-    display: flex;
-    min-width: 153px;
-    padding: 0 20px 70px 20px;
   }
 
   .tariffs__inner-item {
@@ -85,20 +121,8 @@
     margin: 0 1px;
   }
 
-  .tatiffs__item,
-  .tatiffs__item-main {
-    padding-left: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-transform: none;
-  }
-
   .tariffs__toggles {
     display: none;
-  }
-
-  .tariffs__price {
-    padding-bottom: 16px;
   }
 
   .tariffs__transporent {
@@ -118,21 +142,13 @@
     margin: 0 1px;
   }
 
-  .tatiffs__item,
-  .tatiffs__item-main {
-    padding: 0 20px;
-  }
-
   .tariffs__toggles {
     display: none;
   }
 
-  .tariffs__price {
-    padding-bottom: 25px;
-  }
-
   .tariffs__titel {
     padding-bottom: 0;
+    font-size: 18px;
   }
 
   .tariffs__transporent {
