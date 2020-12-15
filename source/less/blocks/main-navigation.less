@@ -36,8 +36,13 @@
   }
 }
 
+.main-navigation__list-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 0 fade(@header-text, 30%), 0 2px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 @header-text;
+}
+
 .main-navigation__list {
-  padding-top: 18px;
+  padding-top: 74px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -50,11 +55,11 @@
 
 .main-navigation__toggle {
   position: absolute;
-  top: -31px;
+  top: 0;
   right: 20px;
   display: block;
-  width: 50px;
-  height: 24px;
+  width: 52px;
+  height: 35px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -71,8 +76,8 @@
   &::after {
     content: "";
     position: absolute;
-    width: 23px;
-    height: 2px;
+    width: 27px;
+    height: 3px;
     background-color: @background;
   }
 
