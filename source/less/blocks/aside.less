@@ -3,13 +3,27 @@
     font-size: 14px;
     line-height: 24px;
     max-width: 308px;
-    margin-bottom: 8px;
+    margin-bottom: 33px;
+  }
+
+  .aside__description-desktop {
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     padding-left: 370px;
+    max-width: 900px;
+    margin-top: 28px;
+  }
+
+  .aside__description-tabl {
+    display: none;
+  }
+
+  .aside__description-desktop {
+    display: block;
   }
 }
 
@@ -20,11 +34,20 @@
     font-weight: bold;
     color: @header-text;
     margin-bottom: -2px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
     padding-left: 370px;
+    margin-top: 54px;
+  }
+
+  br {
+    display: none;
   }
 }
 
