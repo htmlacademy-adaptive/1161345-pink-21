@@ -63,6 +63,33 @@
   }
 }
 
+
+.promo__header-form {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 81px;
+    margin-bottom: 74px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 104px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
 .promo__header-catalog {
   font-weight: 300;
   font-size: 24px;
@@ -174,5 +201,7 @@
   a.promo__buttton-to-all {
     margin-top: 172px;
     margin-bottom: 75px;
+    padding-left: 29px;
+    padding-right: 29px;
   }
 }

@@ -7,8 +7,30 @@
 
 .quest label {
   padding-left: 23px;
-  padding-bottom: 17px;
+  font-size: 14px;
+  line-height: 30px;
   color: @bright-element;
+}
+
+.quest__about-inner label {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  color: @bright-element;
+}
+
+.quest__radio-item label {
+  padding-left: 46px;
+  font-size: 18px;
+  line-height: 30px;
+  color: @base-text;
+}
+
+.quest__checkbox-item label {
+  color: @base-text;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 60px;
 }
 
 .quest__item {
@@ -16,15 +38,15 @@
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
-  padding: 23px 20px;
-  margin-top: 17px;
-  min-width: 236px;
-  margin-bottom: 17px;
+  margin-top: 6px;
+  min-width: 280px;
+  padding-bottom: 14px;
+  padding-top: 18px;
 
   @media (min-width: @tablet-width) {
     min-width: 496px;
-    padding: 23px 0 23px 20px;
-    margin-top: 11px;
+    padding: 23px 20px;
+    margin-top: 17px;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,20 +77,18 @@
   text-transform: uppercase;
   color: @bright-element;
   text-align: center;
-  padding-top: 42px;
   margin: 0;
+  padding-top: 39px;
 }
 
 .quest__checkbox-item {
-  padding-bottom: 47px;
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 10px;
 }
 
 .quest__checkbox-item:last-child {
-  padding-bottom: 55px;
-}
-
-.quest__checkbox-item:first-child {
-  padding-top: 55px;
+  padding-bottom: 48px;
 }
 
 // Radio
@@ -76,12 +96,13 @@
 .quest__list,
 .quest__list-radio,
 .quest__header {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .quest__inner-backgraound {
   background-color: @admission;
-  margin-top: 13px;
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
     background-color: @background;
@@ -221,4 +242,70 @@
     min-width: 816px;
     margin-left: 60px;
   }
+}
+
+.quest__checkbox-input {
+  display: none;
+}
+
+.quest__checkbox-item::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 2px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @border-form;
+}
+
+.quest__checkbox-item:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: 2px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @border-form;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.quest_contact-inner .quest__item {
+  padding-top: 24px;
+}
+
+.quest__inner-backgraound .header {
+  padding-top: 47px;
+}
+
+.quest__radio-item input {
+  display: none;
+}
+
+.quest__radio-item::before {
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: 22px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid @border-form;
+  border-radius: 50%;
+}
+
+.quest__list-radio {
+  position: relative;
+}
+
+.quest__text-span {
+  color: @bright-element;
+}
+
+.quest__text {
+  padding-left: 70px;
+}
+
+.quest_contact-inner label {
+  margin-top: 10px;
 }
