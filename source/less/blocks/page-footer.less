@@ -20,12 +20,8 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    margin-top: 74px;
     margin-bottom: 37px;
-  }
-
-  br {
-    display: block;
+    margin-top: 60px;
   }
 }
 
@@ -47,7 +43,7 @@
 
   @media (min-width: @tablet-width) {
     width: 660px;
-    height: 342px;
+    height: 358px;
     padding-top: 0;
   }
 
@@ -94,6 +90,10 @@
   display: flex;
   justify-content: center;
   padding-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -103,7 +103,7 @@
   }
 }
 
-.page-footer__map::after {
+/*.page-footer__map::after {
   content: "";
   position: absolute;
   background-image: url("../img/map_marker.svg");
@@ -117,7 +117,7 @@
     top: 69%;
     left: 47%;
   }
-}
+}*/
 
 .page-footer .container {
   padding: 0;

@@ -1,5 +1,13 @@
 .tariffs .container {
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .tariffs__list {
@@ -15,7 +23,7 @@
   background-image: url("../img/grey_background.png");
   background-repeat: no-repeat;
   background-position: center 84%;
-  background-size: 100% 98%;
+  background-size: 100% 94%;
 }
 
 .tariffs__titel {
@@ -84,7 +92,11 @@
   position: relative;
   text-align: center;
   padding-top: 29px;
-  padding-bottom: 54px;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 54px;
+  }
 }
 
 .tariffs-wrapper {
@@ -101,21 +113,39 @@
 
 .tariffs__display-none {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 94px;
+  }
 }
 
 .tariffs__inner {
-  transform: translateX(22px);
+  transform: translateX(-110px);
+  display: flex;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     min-width: 153px;
     padding-bottom: 70px;
+    transform: none;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 233px;
-    padding-bottom: 90px;
+    padding-bottom: 105px;
     transform: none;
+  }
+}
+
+.tariffs__inner-standart {
+  min-width: 276px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 153px;
   }
 }
 
@@ -123,21 +153,15 @@
   width: 276px;
 
   @media (min-width: @tablet-width) {
-    width: 153px;
-    margin: 0;
+    min-width: 153px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 233px;
-    margin: 0 1px;
+    min-width: 236px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .tariffs__display-none {
-    display: block;
-  }
-
   .tariffs__toggles {
     display: none;
   }
@@ -171,15 +195,6 @@
 
   .tatiffs__item p {
     color: transparent;
-  }
-}
-
-.tariffs__inner-baza,
-.tariffs__inner-anlim {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
   }
 }
 
@@ -235,7 +250,7 @@
   border: 3px solid @base-text;
   border-radius: 7px;
   left: 51%;
-  top: 22px;
+  top: -11px;
 
   @media (min-width: @tablet-width) {
     left: 48%;
@@ -250,7 +265,7 @@
   border: 3px solid fade(@base-text, 30%);
   border-radius: 7px;
   left: 44%;
-  top: 26px;
+  top: -7px;
   box-shadow: 48px 0 0 0 fade(@base-text, 30%);
 
   @media (min-width: @tablet-width) {
@@ -261,5 +276,9 @@
 .tatiffs__item-main p {
   @media (min-width: @tablet-width) {
     margin-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 19px;
   }
 }
