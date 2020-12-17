@@ -10,8 +10,14 @@
   padding-top: 12px;
   padding-bottom: 13px;
   border-radius: 1px;
-  margin-left: 22px;
   margin-bottom: 20px;
+  margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    min-width: 298px;
+    margin-bottom: 40px;
+  }
 }
 
 .button__post-adding {

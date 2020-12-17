@@ -19,20 +19,6 @@
   color: @bright-element;
 }
 
-.quest__radio-item label {
-  padding-left: 46px;
-  font-size: 18px;
-  line-height: 30px;
-  color: @base-text;
-}
-
-.quest__checkbox-item label {
-  color: @base-text;
-  font-size: 18px;
-  line-height: 30px;
-  padding-left: 60px;
-}
-
 .quest__item {
   border: 2px solid @border-form;
   border-radius: 1px;
@@ -44,9 +30,12 @@
   padding-top: 18px;
 
   @media (min-width: @tablet-width) {
-    min-width: 496px;
-    padding: 23px 20px;
-    margin-top: 17px;
+    min-width: 524px;
+    padding-left: 0;
+    margin-top: 1px;
+    margin-bottom: 24px;
+    padding-top: 17px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,6 +59,43 @@
 
 // Checkbox
 
+.quest__checkbox-wrapper {
+  @media (min-width: @tablet-width) {
+    margin-top: 85px;
+    position: relative;
+  }
+}
+
+.quest__header-checkbox {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @bright-element;
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -8px;
+    left: 103px;
+    background-color: @background;
+    padding: 0 20px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.quest__checkbox-item label {
+  color: @base-text;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 60px;
+}
+
 .quest__header {
   font-size: 14px;
   line-height: 18px;
@@ -78,13 +104,19 @@
   color: @bright-element;
   text-align: center;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 29px;
 }
 
 .quest__checkbox-item {
   position: relative;
   padding-top: 42px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 0;
+    padding-left: 57px;
+  }
 }
 
 .quest__checkbox-item:last-child {
@@ -92,6 +124,13 @@
 }
 
 // Radio
+
+.quest__radio-item label {
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px;
+  color: @base-text;
+}
 
 .quest__list,
 .quest__list-radio,
@@ -105,9 +144,11 @@
   margin-top: 23px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     background-color: @background;
     padding: 0 20px;
-    margin-top: 44px;
+    margin-top: -19px;
+    min-width: 661px;
   }
 
   @media (min-width: @desktop-width) {
@@ -118,15 +159,16 @@
 }
 
 .quest__radio-item {
-  padding-top: 38px;
+  padding-top: 44px;
+  padding-left: 59px;
 }
 
 .quest__radio-item:first-child {
-  padding-top: 52px;
+  padding-top: 56px;
 }
 
 .quest__radio-item:last-child {
-  padding-bottom: 54px;
+  padding-bottom: px;
 }
 
 .quest__radio--input:hover {
@@ -135,8 +177,106 @@
 
 // Contacts
 
+fieldset.quest_contact-inner {
+  border: 2px solid @border-form;
+  margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+    padding-right: 60px;
+  }
+}
+
+.quest_contacts label {
+  @media (min-width: @tablet-width) {
+    margin-left: 77px;
+    margin-top: 15px;
+    text-align: start;
+  }
+}
+
+.quest__item-contact {
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.quest__header-contact {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @bright-element;
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background-color: @background;
+    top: 10px;
+    left: 211px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    z-index: 2;
+  }
+}
+
+.quest_contacts p {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .quest_contacts {
   padding: 0 20px;
+}
+
+.quest_contact-inner label {
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+    order: 1;
+  }
+}
+
+// Textarea
+
+.quest__header-textarea {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @bright-element;
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -7px;
+    left: 180px;
+    background-color: @background;
+    padding: 0 35px;
+  }
+}
+
+.quest_textarea-wrapper {
+  border: 2px solid @border-form;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.quest_textarea {
+  @media (min-width: @tablet-width) {
+    order: 5;
+    margin-top: 67px;
+    margin-left: 21px;
+    min-width: 619px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -160,22 +300,18 @@
 
   .quest_contacts {
     order: 3;
-    margin-top: 70px;
+    margin-top: 49px;
+    position: relative;
   }
 
   .quest__radio {
     order: 2;
   }
 
-  .quest_textarea {
-    order: 5;
-    margin-top: 65px;
-  }
-
   .quest__footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 64px;
   }
 
   .quest p {
@@ -188,16 +324,8 @@
     padding-left: 60px;
   }
 
-  .quest_textarea-wrapper {
-    border: 2px solid @border-form;
-  }
-
   p.quest__text {
     border: none;
-  }
-
-  fieldset.quest_contact-inner {
-    border: 2px solid @border-form;
   }
 }
 
@@ -256,6 +384,13 @@
   width: 35px;
   height: 35px;
   border: 2px solid @border-form;
+
+  @media (min-width: @tablet-width) {
+    top: 50px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .quest__checkbox-item:checked + label::after {
@@ -272,7 +407,15 @@
 }
 
 .quest_contact-inner .quest__item {
-  padding-top: 24px;
+  padding-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+    margin-top: 31px;
+    margin-left: 58px;
+    min-width: 500px;
+    margin-bottom: -15px;
+  }
 }
 
 .quest__inner-backgraound .header {
@@ -292,10 +435,19 @@
   height: 37px;
   border: 2px solid @border-form;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 52px;
+    left: 59px;
+    width: 39px;
+    height: 39px;
+  }
 }
 
 .quest__list-radio {
   position: relative;
+  min-height: 299px;
+  margin-top: 47px;
 }
 
 .quest__text-span {
@@ -306,6 +458,37 @@
   padding-left: 70px;
 }
 
-.quest_contact-inner label {
-  margin-top: 10px;
+.quest__about-inner-midle {
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+.quest__header-radio {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @bright-element;
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background-color: @background;
+    top: 39px;
+    left: 151px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    z-index: 2;
+  }
+}
+
+.quest__radio-input label {
+  @media (min-width: @tablet-width) {
+    padding-left: 10px;
+  }
 }
