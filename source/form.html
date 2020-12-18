@@ -13,29 +13,29 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__inner-ctn">
-        <div class="page-header__menu">
-          <div class="page-header__top-line page-header__top-line--over">
-            <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
-              <img src="img/pink.svg" width="74" height="23" alt="Pink">
-            </a>
-          </div>
-          <nav class="main-navigation main-navigation--opened">
-            <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-navigation__list list-reset">
-              <li class="main-navigation__list-item">
-                <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
-              </li>
-              <li class="main-navigation__list-item">
-                <a href="catalog.html" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
-              </li>
-              <li class="main-navigation__list-item main-navigation__form-active">
-                <a href="#" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
-              </li>
-              <li class="main-navigation__list-item">
-                <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="page-header__menu">
+        <div class="page-header__top-line page-header__top-line--over">
+          <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
+            <img src="img/pink.svg" width="74" height="23" alt="Pink">
+          </a>
+        </div>
+        <nav class="main-navigation main-navigation--opened">
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-navigation__list list-reset">
+            <li class="main-navigation__list-item">
+              <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a href="catalog.html" aria-label="Перейти на страницу с Фотографиями">Фотографии</a>
+            </li>
+            <li class="main-navigation__list-item main-navigation__form-active">
+              <a href="#" aria-label="Перейти на страницу с конкурсом">Конкурс</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a href="https://htmlacademy.ru" aria-label="Прейти на страницу HTML Academy">html Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="page-header__promo">
@@ -52,7 +52,7 @@
     <section class="form">
       <div class="form__wrapper">
         <h2 class="visually-hidden">Форма для заполнения</h2>
-        <p class="form__title">Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на вашу бонусную карту! <br> <span>Пожалуйста, заполните форму ниже:</span></p>
+        <p class="form__title">Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на вашу бонусную карту! <br><span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="form__quest quest" action="https://echo.htmlacademy.ru" method="post">
           <div class="quest__about">
             <fieldset>
@@ -76,27 +76,27 @@
               <fieldset>
                 <legend class="quest__header-checkbox">Ваши безбашенные<br> достижения в путешествии</legend>
                 <ul class="quest__list list-reset">
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-1">
                     <input class="quest__checkbox-input" type="checkbox" id="shark" checked>
                     <label for="shark">Сделал селфи с акулой</label>
                   </li>
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-2">
                     <input class="quest__checkbox-input" type="checkbox" id="beach" checked>
                     <label for="beach">Обгорел на пляже</label>
                   </li>
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-3">
                     <input class="quest__checkbox-input" type="checkbox" id="Chuck-Norris">
                     <label for="Chuck-Norris">Видел Чака Норриса</label>
                   </li>
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-4">
                     <input class="quest__checkbox-input" type="checkbox" id="souvenirs">
                     <label for="souvenirs">Накупил сувениров</label>
                   </li>
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-5">
                     <input class="quest__checkbox-input" type="checkbox" id="tower" checked>
                     <label for="tower">Удержал башню</label>
                   </li>
-                  <li class="quest__checkbox-item">
+                  <li class="quest__checkbox-item quest__checkbox-item-6">
                     <input class="quest__checkbox-input" type="checkbox" id="hotel">
                     <label for="hotel">Разгромил отель</label>
                   </li>
@@ -114,7 +114,7 @@
               </p>
               <p>
                 <label for="email">Адрес почты</label>
-                <input class="quest__item quest__item-contact" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="quest__item quest__item-contact" type="email" id="email" name="email" placeholder="Введите почту  *" required>
               </p>
             </fieldset>
           </div>
@@ -140,19 +140,20 @@
             </div>
           </div>
           <div class="quest_textarea">
-              <div class="quest_textarea-wrapper">
-                <fieldset>
-                  <legend class="quest__header-textarea">Опишите свои эмоции</legend>
-                  <p>
-                    <textarea name="comment" rows="4" id="feedback-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-                  </p>
-                </fieldset>
-              </div>
-              <div class="quest__footer">
-                <button class="quest__button button-form" type="submit">Отправить форму</button>
-                <p class="quest__text"><span class="quest__text-span">*</span> — обязательные поля</p>
-              </div>
+            <div class="quest_textarea-wrapper">
+              <fieldset>
+                <legend class="quest__header-textarea">Опишите свои эмоции</legend>
+                <p>
+                  <textarea name="comment" rows="4" id="feedback-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </p>
+              </fieldset>
             </div>
+            <div class="quest__footer">
+              <button class="quest__button button-form" type="submit">Отправить форму</button>
+              <p class="quest__text-mobile"><span class="quest__text-span">*</span> — обязательные поля</p>
+              <p class="quest__text-desktop"><span class="quest__text-span">*</span> — обязательные для заполнения поля</p>
+            </div>
+          </div>
         </form>
       </div>
       </div>
@@ -161,8 +162,8 @@
 
   <footer class="page-footer">
     <div class="container">
-      <div class="page-footer__wrapper">
-        <h2 class="visually-hidden">Мы в соц сетях</h2>
+      <div class="page-footer__wrapper-form">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <a class="page-footer__login page-footer__login-form" aria-label="Перейти на главную страницу">
           <img src="img/logotype_mobile_footer.svg" width="145" height="40" alt="Pink">
         </a>
