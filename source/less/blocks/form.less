@@ -76,7 +76,7 @@
 // Textarea
 
 .form__quest textarea {
-  border: 2px solid #e5e5e5;
+  border: 2px solid @border-form;
   padding: 12px 0;
   font-size: 18px;
   line-height: 30px;
@@ -87,23 +87,20 @@
   margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    .form__quest textarea {
-      min-width: 496px;
-      border: 2px solid @border-form;
-      margin-left: -2px;
-      margin-top: 31px;
-    }
+    margin-top: 25px;
+    margin-left: 0;
+    min-width: 499px;
+  }
 
-    @media (min-width: @desktop-width) {
-      min-width: 816px;
-      margin-left: 60px;
-      padding-top: 13px;
-      min-height: 124px;
-      resize: none;
-      margin-top: 26px;
-      margin-bottom: 10px;
-      padding-bottom: 0;
-    }
+  @media (min-width: @desktop-width) {
+    min-width: 816px;
+    margin-left: 60px;
+    padding-top: 13px;
+    min-height: 124px;
+    resize: none;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
   }
 }
 
