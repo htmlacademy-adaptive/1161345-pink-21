@@ -50,6 +50,10 @@
   border: 2px solid @base-text;
 }
 
+.quest__item:active {
+  border: 2px solid red;
+}
+
 .quest__item:focus {
   border: 2px solid @bright-element;
 }
@@ -250,10 +254,10 @@ fieldset.quest_contact-inner::before {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 45px;
     left: 373px;
     width: 63px;
-    height: 60px;
+    height: 58px;
     border: 2px solid @border-form;
     background-color: @border-form;
   }
@@ -263,10 +267,10 @@ fieldset.quest_contact-inner::after {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 45px;
     left: 814px;
-    width: 63px;
-    height: 60px;
+    width: 60px;
+    height: 58px;
     border: 2px solid @border-form;
     background-color: @border-form;
   }
@@ -485,7 +489,7 @@ fieldset.quest_contact-inner::after {
   display: none;
 }
 
-.quest__checkbox-item::before {
+.quest__checkbox-input + label::before {
   content: "";
   position: absolute;
   top: 39px;
@@ -554,7 +558,7 @@ fieldset.quest_contact-inner::after {
   display: none;
 }
 
-.quest__radio-item::before {
+.quest__radio--input + label::before {
   content: "";
   position: absolute;
   top: 41px;
@@ -671,6 +675,11 @@ fieldset.quest_contact-inner::after {
 .quest__checkbox-item-4 {
   @media (min-width: @desktop-width) {
     order: 5;
+  }
+}
+
+.quest__checkbox-item-4 + label {
+  @media (min-width: @desktop-width) {
     padding-left: 81px;
   }
 }

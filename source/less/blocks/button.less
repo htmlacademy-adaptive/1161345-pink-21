@@ -20,6 +20,19 @@
   }
 }
 
+.button-form:hover {
+  background-color: @button-hover;
+}
+
+.button-form:active {
+  background-color: @button-hover;
+  color: fade(@background, 30%);
+}
+
+.button-form:disabled {
+  background-color: @border-form;
+}
+
 .button__post-adding {
   min-width: 280px;
   border: 3px solid @bright-element;
