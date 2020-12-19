@@ -10,6 +10,27 @@
   padding-top: 12px;
   padding-bottom: 13px;
   border-radius: 1px;
+  margin-bottom: 20px;
+  margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    min-width: 298px;
+    margin-bottom: 40px;
+  }
+}
+
+.button-form:hover {
+  background-color: @button-hover;
+}
+
+.button-form:active {
+  background-color: @button-hover;
+  color: fade(@background, 30%);
+}
+
+.button-form:disabled {
+  background-color: @border-form;
 }
 
 .button__post-adding {
