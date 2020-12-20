@@ -1,6 +1,6 @@
 .gallery__author-info {
   background-color: @admission;
-  padding-top: 26px;
+  padding-top: 19px;
   padding-left: 17px;
 
   @media (min-width: @tablet-width) {
@@ -17,8 +17,10 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-top: 54px;
-  margin-bottom: 60px;
+  margin-top: 43px;
+  margin-bottom: 51px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   br {
     display: none;
@@ -26,9 +28,9 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    margin-top: 100px;
-    margin-bottom: 85px;
     padding: 0 25px;
+    margin-top: 92px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,8 +46,8 @@
   display: block;
   position: absolute;
   top: 680px;
-  right: 17px;
-  padding: 6px 20px 6px 19px;
+  right: 20px;
+  padding: 6px 18px 6px 17px;
   background-color: @bright-element;
   color: @background;
   font-weight: bold;
@@ -54,9 +56,10 @@
   margin: 0;
   min-width: 140px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    top: 949px;
+    top: 980px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,10 +71,12 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  font-style: normal;
 }
 
 .gallery__autor-name span {
-  font-weight: 300;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -80,8 +85,8 @@
 .gallery__autor-text {
   font-size: 14px;
   line-height: 24px;
-  padding-top: 14px;
-  padding-bottom: 25px;
+  padding-top: 0;
+  padding-bottom: 9px;
   margin: 0;
 }
 
@@ -93,6 +98,7 @@
   margin: 0;
   padding-left: 48px;
   text-transform: uppercase;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
@@ -110,7 +116,6 @@
 .gallery__list {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 // Picture
@@ -161,4 +166,32 @@
   .gallery__author-info {
     min-height: 155px;
   }
+}
+
+.gallery__item-levon img {
+  margin-top: 23px;
+}
+
+.gallery__item-levon .gallery__author-info {
+  padding-top: 10px;
+}
+
+.gallery__item-anton .gallery__author-info {
+  padding-top: 14px;
+}
+
+.gallery__item-boris .gallery__author-info {
+  padding-top: 14px;
+}
+
+.gallery__item-sergri .gallery__author-info {
+  padding-top: 15px;
+}
+
+.gallery__item-maksim .gallery__author-info {
+  padding-top: 16px;
+}
+
+.gallery__item-nadezhda .gallery__author-info {
+  padding-top: 15px;
 }

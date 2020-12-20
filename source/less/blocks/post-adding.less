@@ -3,8 +3,8 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-top: 49px;
-  margin-bottom: 52px;
+  margin-top: 41px;
+  margin-bottom: 61px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,4 +24,17 @@
   @media (min-width: @desktop-width) {
     margin-right: 44px;
   }
+}
+
+.post-adding__item:not(:first-child) {
+  display: none;
+}
+
+//
+
+.post-adding__range-line {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: @base-text;
 }
