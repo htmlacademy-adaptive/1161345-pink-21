@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-top: 41px;
+  margin-top: 44px;
   margin-bottom: 61px;
 }
 
@@ -37,4 +37,29 @@
   width: 240px;
   height: 2px;
   background-color: @base-text;
+  left: 20px;
+}
+
+.post-adding__btns-list {
+  margin-top: 119px;
+}
+
+.post-adding__btn--crpo {
+  display: none;
+}
+
+.post-adding__range-cricle-btn {
+  display: none;
+}
+
+.post-adding__range-line::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid @bright-element;
+  border-radius: 50%;
+  top: -4px;
+  left: 193px;
+  background-color: @background;
 }
