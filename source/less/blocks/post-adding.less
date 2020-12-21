@@ -9,7 +9,7 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 30px;
-    margin-top: 65px;
+    margin-top: 25px;
     margin-bottom: 70px;
   }
 }
@@ -63,6 +63,11 @@
 
     //box-shadow: 0 69px 0 0 @base-text, 0 -74px 0 0 @base-text;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 92px;
+    width: 287px;
+  }
 }
 
 .post-adding__range-line-2 {
@@ -71,6 +76,11 @@
   height: 2px;
   background-color: @base-text;
   left: 90px;
+
+  @media (min-width: @desktop-width) {
+    left: 92px;
+    width: 287px;
+  }
 }
 
 .post-adding__range-line-3 {
@@ -79,6 +89,11 @@
   height: 2px;
   background-color: @base-text;
   left: 90px;
+
+  @media (min-width: @desktop-width) {
+    left: 92px;
+    width: 287px;
+  }
 }
 
 .post-adding__btns-list {
@@ -120,6 +135,10 @@
   @media (min-width: @tablet-width) {
     left: 146px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 69px;
+  }
 }
 
 .post-adding__range-line-2::after {
@@ -136,6 +155,10 @@
   @media (min-width: @tablet-width) {
     left: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 247px;
+  }
 }
 
 .post-adding__range-line-3::after {
@@ -151,6 +174,11 @@
 
   @media (min-width: @tablet-width) {
     left: 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 159px;
+    top: -8px;
   }
 }
 
@@ -179,9 +207,11 @@
 .post-adding-img {
   width: 280px;
   height: 374px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 330px;
     height: 400px;
+    padding: 0;
   }
 }
