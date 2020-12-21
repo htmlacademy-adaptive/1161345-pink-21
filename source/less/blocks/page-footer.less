@@ -126,8 +126,19 @@
 .page-footer__wrapper-catalog {
   margin-top: 66px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 0 20px;
+    margin-top: 39px;
+  }
 }
 
 .page-footer__wrapper-catalog .copyright {
   padding-top: 73px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 25px;
+  }
 }

@@ -71,11 +71,11 @@
             </a>
             <p class="gallery__stiker">Панорама дня</p>
             <div class="container">
-              <div class="gallery__author-info">
-                <cite class="gallery__autor-name">Анна <span>(5 минут назад)</span></cite>
-                <p class="gallery__autor-text">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="gallery__author-info-promo">
+                <cite class="gallery__autor-name-promo">Анна <span>(5 минут назад)</span></cite>
+                <p class="gallery__autor-text-promo">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="gallery__likes-promo">Нравится: 215</p>
               </div>
-              <p class="gallery__likes">Нравится: 215</p>
             </div>
       </div>
       </li>
@@ -90,9 +90,9 @@
           </a>
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Левон<span>(5 часов назад)</span></cite>
-            <p class="gallery__autor-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          </div>
+            <p class="gallery__autor-text">Вчера он на луну летал, сегодня в<br> руки к нам попал.</p>
           <p class="gallery__likes">Нравится: 356</p>
+          </div>
         </li>
         <li class="gallery__item gallery__item-anton">
           <a href="#" aria-label="Открыть полноразмерное изображение">
@@ -105,8 +105,8 @@
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Антон<span>(12 часов назад)</span></cite>
             <p class="gallery__autor-text">Соседи будут рады!</p>
-          </div>
           <p class="gallery__likes">Нравится: 666</p>
+        </div>
         </li>
         <li class="gallery__item gallery__item-boris">
           <a href="#" aria-label="Открыть полноразмерное изображение">
@@ -119,10 +119,10 @@
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Борис<span>(20 часов назад)</span></cite>
             <p class="gallery__autor-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          </div>
           <p class="gallery__likes">Нравится: 215</p>
+        </div>
         </li>
-        <li class="gallery__item gallery__item-sergri">
+        <li class="gallery__item gallery__item-sergei">
           <a href="#" aria-label="Открыть полноразмерное изображение">
             <picture>
               <source media="(min-width: 960px)" srcset="../img/catalog/photo-4-tablet.png, ../img/catalog/photo-4-desktop@2x.png">
@@ -133,8 +133,8 @@
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Сергей<span>(25 часов назад)</span></cite>
             <p class="gallery__autor-text">Самая кубанская в мире!</p>
-          </div>
           <p class="gallery__likes">Нравится: 4</p>
+        </div>
         </li>
         <li class="gallery__item gallery__item-maksim">
           <a href="#" aria-label="Открыть полноразмерное изображение">
@@ -147,8 +147,8 @@
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Максим<span>(40 часов назад)</span></cite>
             <p class="gallery__autor-text">Где снег-то?</p>
-          </div>
           <p class="gallery__likes">Нравится: 150</p>
+        </div>
         </li>
         <li class="gallery__item gallery__item-nadezhda">
           <a href="#" aria-label="Открыть полноразмерное изображение">
@@ -161,8 +161,8 @@
           <div class="gallery__author-info">
             <cite class="gallery__autor-name">Надежда<span>(45 часов назад)</span></cite>
             <p class="gallery__autor-text">Всем GM и взаимные лайки!</p>
-          </div>
           <p class="gallery__likes">Нравится: 2560</p>
+        </div>
         </li>
       </ul>
       </ul>
@@ -171,36 +171,35 @@
     </section>
 
     <section class="post-adding">
-      <div class="container">
         <h2 class="visually-hidden">Добавить свой пост</h2>
         <p class="post-adding__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         <form class="post-adding__form">
           <picture>
             <source media="(min-width: 960px)" srcset="../img/catalog/photo-7-tablet.png, ../img/catalog/photo-7-desktop@2x.png">
-            <source media="(min-width: 660px)" srcset="../img/catalog/photo-7-tablet.png, ../img/catalog/photo-7-tablet.png">
-            <img class="post-adding-img" src="../img/catalog/photo-7-mobile.png" srcset="../img/catalog/photo-7-mobile@2x.png" width="280" height="374" alt="добавь свой пост">
+            <source media="(min-width: 660px)" srcset="../img/catalog/photo-7-tablet.png, ../img/catalog/photo-7-tablet@2x.png">
+            <img class="post-adding-img" src="../img/catalog/photo-7-mobile.png" srcset="../img/catalog/photo-7-mobile@2x.png" alt="добавь свой пост">
           </picture>
           <input class="visually-hidden" id="post-adding__input" type="image" alt="Новое фото">
           <label class="post-adding__input" for="post-adding__input" aria-label="Новое фото"></label>
           <ul class="post-adding__btns-list list-reset">
-            <li class="post-adding__item">
+            <li class="post-adding__item-1">
               <button class="post-adding__btn post-adding__btn--crpo" type="button" aria-label="Кнопка редактирования фото: обрезка"></button>
               <div class="post-adding__range">
-                <div class="post-adding__range-line"></div>
+                <div class="post-adding__range-line-1"></div>
                 <button class="post-adding__range-cricle-btn" aria-label="Ползунок регулировки" type="button"></button>
               </div>
             </li>
-            <li class="post-adding__item">
+            <li class="post-adding__item-2">
               <button class="post-adding__btn post-adding__btn--fill" type="button" aria-label="Кнопка редактирования фото: заливка"></button>
               <div class="post-adding__range">
-                <div class="post-adding__range-line"></div>
+                <div class="post-adding__range-line-2"></div>
                 <button class="post-adding__range-cricle-btn" aria-label="Ползунок регулировки" type="button"></button>
               </div>
             </li>
-            <li class="post-adding__item">
+            <li class="post-adding__item-3">
               <button class="post-adding__btn post-adding__btn--contrast" type="button" aria-label="Кнопка редактирования фото: контраст"></button>
               <div class="post-adding__range">
-                <div class="post-adding__range-line"></div>
+                <div class="post-adding__range-line-3"></div>
                 <button class="post-adding__range-cricle-btn" aria-label="Ползунок регулировки" type="button"></button>
               </div>
             </li>
@@ -208,7 +207,6 @@
           <div class="button__inner">
             <button class="button__post-adding post-adding__postig-btn" type="submit" aria-label="Кнопка добавления поста">Запостить</button>
             <button class="button__post-adding post-adding__rest-btn" type="button" aria-label="Кнопка сброса поста">Отмена</button>
-          </div>
         </form>
       </div>
     </section>

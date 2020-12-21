@@ -47,8 +47,9 @@
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 38px;
+    min-width: 260px;
     max-width: 260px;
-    margin-left: 307px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,19 +57,20 @@
   }
 }
 
+//  Catalog
+
 .button__inner {
+  margin-top: 74px;
+  padding-left: 20px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 267px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
   }
-}
-
-//  Catalog
-
-.button__inner {
-  margin-top: 74px;
 }
