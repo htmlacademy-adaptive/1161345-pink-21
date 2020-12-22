@@ -4,11 +4,24 @@
 
 .reviews-wrapper {
   text-align: center;
-  padding-top: 41px;
+  padding-top: 38px;
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.reviews-wrapper::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    top: 18%;
+    left: 47%;
   }
 }
 
@@ -57,7 +70,34 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 135px;
+    margin-top: 146px;
+    position: relative;
+  }
+}
+
+.reviews__text::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/left_arrow.svg");
+    background-repeat: no-repeat;
+    left: -17%;
+    top: 31%;
+  }
+}
+
+.reviews__text::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/right_arrow.svg");
+    background-repeat: no-repeat;
+    left: 114%;
+    top: 31%;
   }
 }
 

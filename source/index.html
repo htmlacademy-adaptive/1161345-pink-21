@@ -98,9 +98,11 @@
       </div>
       <aside class="advantages__aside">
         <div class="container">
+          <div class="advantages__aside-inner">
           <p class="aside__title">Эффект<br> на 24 часа!</p>
           <p class="aside__description">Британские ученые провели исследования и доказали,<br class="aside__description-desktop"> что положительный эффект <br class="aside__description-tabl">от использования приложения длится целые сутки!</p>
           <a class="aside__link" href="#" aria-label="Перейти на сайт статьи об исследовании">Узнать больше об исследовании</a>
+        </div>
         </div>
       </aside>
       </div>
@@ -215,23 +217,27 @@
       <p class="page-footer__slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
       <div class="page-footer__contacts">
         <div class="container">
-        <ul class="contacts contacts__list list-reset">
-          <li class="contacts__item">
-            <p>Звоните:</p>
-            <a href="tel:+78125556666" aria-label="Позвонить нам">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <p>Пишите:</p>
-            <a href="mailto:mail@htmlacademy.ru" aria-label="Написать нам">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <p>Приезжайте в гости:</p>
-            <a href="#" aria-label="Показаь на карте">ул. Большая<br> Конюшенная, 19/8</a>
-          </li>
-        </ul>
+          <ul class="contacts contacts__list list-reset">
+            <li class="contacts__item">
+              <p>Звоните:</p>
+              <a href="tel:+78125556666" aria-label="Позвонить нам">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <p>Пишите:</p>
+              <a href="mailto:mail@htmlacademy.ru" aria-label="Написать нам">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <p>Приезжайте в гости:</p>
+              <a href="#" aria-label="Показаь на карте">ул. Большая<br> Конюшенная, 19/8</a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__map">
-          <img src="../img/map_desk.png" width="320" height="200" alt="Карта">
+          <picture>
+            <source media="(min-width: 960px)" srcset="../img/map_desk.png 1x, ../img/map_desk@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="../img/map_tabl.png 1x, ../img/map_tabl@2x.png 2x">
+            <img class="map" src="../img//map_mobile.png" srcset="../img/map_mobile@2x.png 2x" alt="карта">
+          </picture>
         </div>
       </div>
       <div class="page-footer__wrapper">
@@ -258,7 +264,7 @@
           </a>
         </div>
       </div>
-      </div>
+    </div>
     </div>
     </div>
   </footer>
