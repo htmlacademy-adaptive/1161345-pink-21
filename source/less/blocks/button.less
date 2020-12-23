@@ -47,22 +47,40 @@
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 38px;
+    min-width: 260px;
     max-width: 260px;
-    margin-left: 307px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+    min-width: 183px;
+    padding-left: 0;
   }
 }
 
+//  Catalog
+
 .button__inner {
+  margin-top: 74px;
+  padding-left: 20px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 267px;
+    padding-left: 0;
+    margin-right: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    margin-top: 341px;
+    margin-right: 198px;
   }
+}
+
+.button__post-adding.post-adding__rest-btn {
+  border: 3px solid @base-text;
+  opacity: 0.1;
+  color: @base-text;
 }

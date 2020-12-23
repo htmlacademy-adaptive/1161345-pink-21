@@ -34,7 +34,10 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    padding: 0 222px;
+    padding-left: 260px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 263px;
     margin-top: 91px;
 
     br {
@@ -106,7 +109,16 @@
 
 .form__quest textarea::-webkit-input-placeholder {
   color: @base-text;
-  padding-left: 20px;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__quest input::placeholder {
+  color: @base-text;
+  padding: 0;
 }
 
 @media (min-width: @desktop-width) {
@@ -120,4 +132,15 @@
     margin-left: 60px;
     margin-right: 60px;
   }
+}
+
+.form input[type="text"],
+.form textarea[type="text"],
+.form input[type="email"],
+.form input[type="number"] {
+  padding-left: 18px;
+}
+
+.form textarea[id="feedback-comment"] {
+  letter-spacing: -1px;
 }
