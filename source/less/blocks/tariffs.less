@@ -1,5 +1,5 @@
 .tariffs .container {
-  padding-left: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     padding: 0 20px;
@@ -72,6 +72,7 @@
 
 .tatiffs__item,
 .tatiffs__item-main {
+  position: relative;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -112,6 +113,7 @@
 
 .tariffs-wrapper {
   padding-top: 165px;
+  overflow-x: hidden;
 
   @media (min-width: @tablet-width) {
     padding-top: 130px;
@@ -153,18 +155,6 @@
 }
 
 .tariffs__inner-item {
-  min-width: 276px;
-
-  @media (min-width: @tablet-width) {
-    min-width: 153px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 234px;
-  }
-}
-
-.tariffs__inner-standart {
   min-width: 276px;
 
   @media (min-width: @tablet-width) {
@@ -268,8 +258,8 @@
   height: 14px;
   border: 3px solid @base-text;
   border-radius: 7px;
-  left: 51%;
-  top: 18px;
+  left: 48%;
+  top: 22px;
 
   @media (min-width: @tablet-width) {
     left: 48%;
@@ -283,8 +273,8 @@
   height: 6px;
   border: 3px solid fade(@base-text, 30%);
   border-radius: 7px;
-  left: 44%;
-  top: 22px;
+  left: 42%;
+  top: 26px;
   box-shadow: 48px 0 0 0 fade(@base-text, 30%);
 
   @media (min-width: @tablet-width) {
@@ -299,5 +289,165 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 19px;
+  }
+}
+
+.tariffs__inner-standart {
+  min-width: 276px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 234px;
+  }
+
+  .tatiffs__item--pink::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 10px;
+    }
+  }
+
+  .tatiffs__item--smile::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 13px;
+    }
+  }
+
+  .tatiffs__item--comment::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    left: 229px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 11px;
+    }
+  }
+}
+
+.tariffs__inner-baza {
+  .tatiffs__item--pink::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 10px;
+    }
+  }
+
+  .tatiffs__item--smile::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 9px;
+    }
+  }
+
+  .tatiffs__item--comment::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    left: 229px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 11px;
+    }
+  }
+}
+
+.tariffs__inner-anlim {
+  .tatiffs__item--pink::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 10px;
+    }
+  }
+
+  .tatiffs__item--smile::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 226px;
+    top: 17px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 13px;
+    }
+  }
+
+  .tatiffs__item--comment::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    left: 229px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      left: 62px;
+      top: 11px;
+    }
   }
 }
