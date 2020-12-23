@@ -263,28 +263,42 @@ fieldset.quest_contact-inner {
 }
 
 fieldset.quest_contact-inner::before {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
+    border: 2px solid @border-form;
+    background-color: @border-form;
+    top: 45px;
+    left: 493px;
+    width: 63px;
+    height: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
     top: 45px;
     left: 373px;
     width: 63px;
     height: 58px;
-    border: 2px solid @border-form;
-    background-color: @border-form;
   }
 }
 
 fieldset.quest_contact-inner::after {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
+    border: 2px solid @border-form;
+    background-color: @border-form;
+    top: 185px;
+    left: 496px;
+    width: 60px;
+    height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
     top: 45px;
     left: 814px;
     width: 60px;
     height: 58px;
-    border: 2px solid @border-form;
-    background-color: @border-form;
   }
 }
 
@@ -303,6 +317,49 @@ fieldset.quest_contact-inner::after {
 .quest__item-contact {
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+  }
+}
+
+.quest_number-tel::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/form/phone_icon.svg");
+    background-repeat: no-repeat;
+    left: 515px;
+    top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 390px;
+    top: 63px;
+  }
+}
+
+.quest_email::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/form/mail_icon.svg");
+    background-repeat: no-repeat;
+    left: 515px;
+    top: 205px;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 837px;
+    top: 66px;
+  }
+}
+
+.quest__item-contact input[type="email"] {
+  @media (min-width: @desktop-width) {
+    padding-left: 4px;
   }
 }
 
@@ -526,12 +583,6 @@ fieldset.quest_contact-inner::after {
     min-width: 377px;
     margin-top: 29px;
     margin-left: 61px;
-  }
-}
-
-.quest__item-contact input[type="email"] {
-  @media (min-width: @desktop-width) {
-    padding-left: 4px;
   }
 }
 
