@@ -72,6 +72,7 @@
 
     @media (min-width: @desktop-width) {
       left: 69px;
+      top: -6px;
     }
   }
 
@@ -89,6 +90,10 @@
   @media (min-width: @desktop-width) {
     left: 92px;
     width: 287px;
+  }
+
+  &:active::after {
+    background-color: @bright-element;
   }
 }
 
@@ -110,7 +115,12 @@
 
     @media (min-width: @desktop-width) {
       left: 247px;
+      top: -6px;
     }
+  }
+
+  &:active::after {
+    background-color: @bright-element;
   }
 
   position: relative;
@@ -143,8 +153,12 @@
 
     @media (min-width: @desktop-width) {
       left: 159px;
-      top: -8px;
+      top: -6px;
     }
+  }
+
+  &:active::after {
+    background-color: @bright-element;
   }
 
   position: relative;

@@ -79,8 +79,36 @@
   }
 }
 
-.button__post-adding .post-adding__rest-btn {
+.button__post-adding.post-adding__rest-btn {
   border: 3px solid @base-text;
   opacity: 0.1;
   color: @base-text;
+
+  &:hover {
+    color: @base-text;
+    border: 3px solid @base-text;
+    opacity: 0.3;
+  }
+
+  &:active {
+    border: 3px solid @base-text;
+    color: fade(@background, 30%);
+    background-color: @base-text;
+  }
+}
+
+.button__post-adding.post-adding__postig-btn {
+  border: 3px solid @bright-element;
+  background-color: @admission;
+  color: @bright-element;
+
+  &:hover {
+    color: @background;
+    background-color: @bright-element;
+  }
+
+  &:active {
+    color: fade(@background, 30%);
+    background-color: @bright-element;
+  }
 }
