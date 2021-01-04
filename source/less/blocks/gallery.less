@@ -58,7 +58,7 @@
 
     @media (min-width: @desktop-width) {
       left: 1066px;
-      top: 1169px;
+      top: 1171px;
     }
   }
 
@@ -147,18 +147,16 @@
   text-align: center;
   margin-top: 43px;
   margin-bottom: 51px;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  br {
-    display: none;
-  }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     padding: 0 25px;
     margin-top: 92px;
     margin-bottom: 75px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -416,5 +414,13 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 940px;
+  }
+}
+
+.gallery__image-backgraound {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
   }
 }
