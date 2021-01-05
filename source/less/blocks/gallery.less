@@ -1,6 +1,7 @@
 // Promo
 
 .gallery__author-info-promo {
+  position: relative;
   background-color: @admission;
   padding-top: 11px;
   padding-left: 17px;
@@ -16,10 +17,10 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 27px;
-    padding-top: 25px;
     margin-top: -9px;
     padding-bottom: 13px;
     margin-bottom: 32px;
+    padding-top: 21px;
   }
 }
 
@@ -53,12 +54,17 @@
     height: 12px;
     background-image: url("../img/catalog/heart.svg");
     background-repeat: no-repeat;
-    top: 971px;
-    left: 37px;
+    top: 147px;
+    left: 17px;
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 576px;
+    }
 
     @media (min-width: @desktop-width) {
-      left: 1066px;
-      top: 1171px;
+      left: 896px;
+      top: 32px;
     }
   }
 
@@ -103,7 +109,7 @@
 
   @media (min-width: @desktop-width) {
     top: 689px;
-    right: 162px;
+    right: 170px;
   }
 }
 
@@ -412,8 +418,10 @@
   padding: 0 20px;
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
   }
 }
 
