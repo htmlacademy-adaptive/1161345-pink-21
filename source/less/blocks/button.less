@@ -56,26 +56,30 @@
     margin-left: 0;
     min-width: 183px;
     padding-left: 0;
+    margin-bottom: 18px;
   }
 }
 
 //  Catalog
 
 .button__inner {
-  margin-top: 74px;
+  margin-top: 79px;
   padding-left: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-right: 14px;
 
   @media (min-width: @tablet-width) {
-    grid-column-start: 2;
-    grid-row-start: 1;
     margin-top: 267px;
     padding-left: 0;
     margin-right: 14px;
+    grid-column-start: 2;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 341px;
-    margin-right: 198px;
+    display: flex;
+    margin-right: 60px;
   }
 }
 
@@ -83,4 +87,32 @@
   border: 3px solid @base-text;
   opacity: 0.1;
   color: @base-text;
+
+  &:hover {
+    color: @base-text;
+    border: 3px solid @base-text;
+    opacity: 0.3;
+  }
+
+  &:active {
+    border: 3px solid @base-text;
+    color: fade(@background, 30%);
+    background-color: @base-text;
+  }
+}
+
+.button__post-adding.post-adding__postig-btn {
+  border: 3px solid @bright-element;
+  background-color: @admission;
+  color: @bright-element;
+
+  &:hover {
+    color: @background;
+    background-color: @bright-element;
+  }
+
+  &:active {
+    color: fade(@background, 30%);
+    background-color: @bright-element;
+  }
 }

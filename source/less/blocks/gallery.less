@@ -1,6 +1,7 @@
 // Promo
 
 .gallery__author-info-promo {
+  position: relative;
   background-color: @admission;
   padding-top: 11px;
   padding-left: 17px;
@@ -16,10 +17,10 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 27px;
-    padding-top: 25px;
     margin-top: -9px;
     padding-bottom: 13px;
     margin-bottom: 32px;
+    padding-top: 21px;
   }
 }
 
@@ -53,12 +54,17 @@
     height: 12px;
     background-image: url("../img/catalog/heart.svg");
     background-repeat: no-repeat;
-    top: 971px;
-    left: 37px;
+    top: 147px;
+    left: 17px;
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 576px;
+    }
 
     @media (min-width: @desktop-width) {
-      left: 1066px;
-      top: 1169px;
+      left: 896px;
+      top: 32px;
     }
   }
 
@@ -103,7 +109,7 @@
 
   @media (min-width: @desktop-width) {
     top: 689px;
-    right: 162px;
+    right: 170px;
   }
 }
 
@@ -147,18 +153,16 @@
   text-align: center;
   margin-top: 43px;
   margin-bottom: 51px;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  br {
-    display: none;
-  }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     padding: 0 25px;
     margin-top: 92px;
     margin-bottom: 75px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -189,7 +193,7 @@
   font-size: 14px;
   line-height: 24px;
   padding-top: 0;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -204,7 +208,7 @@
     background-image: url("../img/catalog/heart.svg");
     background-repeat: no-repeat;
     left: 0;
-    top: 10px;
+    top: 6px;
 
     @media (min-width: @tablet-width) {
       left: 228px;
@@ -292,7 +296,7 @@
 }
 
 .gallery__item-levon .gallery__author-info {
-  padding-top: 10px;
+  padding-top: 13px;
 
   @media (min-width: @tablet-width) {
     padding-left: 26px;
@@ -414,7 +418,17 @@
   padding: 0 20px;
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+  }
+}
+
+.gallery__image-backgraound {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
   }
 }
