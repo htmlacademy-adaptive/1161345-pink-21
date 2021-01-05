@@ -123,20 +123,39 @@
 // Logo
 
 .page-header__logo {
+  position: relative;
   margin-top: 0;
-  padding-top: 26px;
+  padding-top: 54px;
   display: block;
 
+  svg {
+    position: absolute;
+    top: 6px;
+    left: -73px;
+    fill: @background;
+
+    &:hover {
+      fill: @bright-element;
+    }
+
+    &:active {
+      fill: @background;
+      fill-opacity: 0.3;
+    }
+
+    @media (min-width: @tablet-width) {
+      position: static;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    width: 52px;
-    height: 35px;
     padding-top: 30px;
   }
-}
 
-.page-header__logo img {
-  width: 73px;
-  height: 23px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-left: 36px;
+  }
 }
 
 .page-header a {
@@ -146,5 +165,33 @@
 .page-header__promo-dowload-app .container {
   @media (min-width: @desktop-width) {
     padding: 0;
+  }
+}
+
+.page-header__logo-starts {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__logo-glasses-desk {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__logo-glasses-tabl {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
