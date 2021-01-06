@@ -336,12 +336,17 @@
   }
 }
 
-.post-adding__crpo-svg {
+.post-adding__crop-svg {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  fill: @bright-element;
   top: -80px;
   left: 58px;
 
   @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
     top: -10px;
     left: 40px;
   }
@@ -349,33 +354,17 @@
   @media (min-width: @desktop-width) {
     top: -22px;
     left: -1px;
-  }
-
-  svg {
     width: 44px;
     height: 44px;
-    fill: @bright-element;
+  }
 
-    @media (min-width: @tablet-width) {
-      width: 22px;
-      height: 22px;
-    }
+  &:hover {
+    fill: @base-text;
+    fill-opacity: 0.3;
+  }
 
-    @media (min-width: @desktop-width) {
-      width: 44px;
-      height: 44px;
-      top: -22px;
-      left: -257px;
-    }
-
-    &:hover {
-      fill: @base-text;
-      fill-opacity: 0.3;
-    }
-
-    &:active {
-      fill-opacity: 0.5;
-    }
+  &:active {
+    fill-opacity: 0.5;
   }
 }
 
@@ -383,8 +372,16 @@
   position: absolute;
   left: 134px;
   top: -80px;
+  width: 48px;
+  height: 43px;
+  fill: @base-text;
+  fill-opacity: 0.3;
 
   @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+    fill: @bright-element;
+    fill-opacity: 1;
     left: 39px;
     top: -6px;
   }
@@ -392,36 +389,17 @@
   @media (min-width: @desktop-width) {
     left: 1px;
     top: -21px;
-  }
-
-  svg {
     width: 48px;
     height: 43px;
+  }
+
+  &:hover {
     fill: @base-text;
     fill-opacity: 0.3;
+  }
 
-    @media (min-width: @tablet-width) {
-      width: 24px;
-      height: 22px;
-      fill: @bright-element;
-      fill-opacity: 1;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 48px;
-      height: 43px;
-      left: -252px;
-      top: -20px;
-    }
-
-    &:hover {
-      fill: @base-text;
-      fill-opacity: 0.3;
-    }
-
-    &:active {
-      fill-opacity: 0.5;
-    }
+  &:active {
+    fill-opacity: 0.5;
   }
 }
 
@@ -429,46 +407,36 @@
   position: absolute;
   left: 217px;
   top: -75px;
+  width: 32px;
+  height: 32px;
+  fill: @base-text;
+  fill-opacity: 0.3;
+
+  &:hover {
+    fill: @base-text;
+    fill-opacity: 0.3;
+  }
+
+  &:active {
+    fill-opacity: 0.5;
+  }
 
   @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+    fill: @bright-element;
+    fill-opacity: 1;
     left: 44px;
     top: 136px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
     left: 8px;
     top: 128px;
   }
-
-  svg {
-    width: 32px;
-    height: 32px;
-    fill: @base-text;
-    fill-opacity: 0.3;
-
-    @media (min-width: @tablet-width) {
-      width: 16px;
-      height: 16px;
-      fill: @bright-element;
-      fill-opacity: 1;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 32px;
-      height: 32px;
-    }
-
-    &:hover {
-      fill: @base-text;
-      fill-opacity: 0.3;
-    }
-
-    &:active {
-      fill-opacity: 0.5;
-    }
-  }
 }
-
 
 .post-adding__fill-inner,
 .post-adding__contrast-inner {
