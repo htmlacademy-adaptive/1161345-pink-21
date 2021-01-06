@@ -36,34 +36,58 @@
   }
 
   svg {
+    &:hover {
+      fill: @bright-element;
+    }
+
     &:active {
       fill-opacity: 0.3;
       fill: @base-text;
     }
   }
 
-  .page-footer__logo-glasses {
-    fill: @bright-element;
-  }
-
   .page-footer__logo-text {
     fill: @base-text;
+  }
+}
 
+.page-footer__login-catalog {
+  svg {
     &:hover {
       fill: @bright-element;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+      fill: @base-text;
     }
   }
 }
 
-.page-footer__login-catalog svg {
-  &:active {
-    fill-opacity: 0.3;
-    fill: @base-text;
+.page-footer__logo-glasses-base {
+  fill: @bright-element;
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
-.page-footer__logo-glasses {
+.page-footer__logo-starts-pink,
+.page-footer__logo-glasses-desk {
   fill: @bright-element;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo-starts {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .page-footer__logo-text {
@@ -151,6 +175,7 @@
 
   .social__list {
     margin-top: 38px;
+    padding-bottom: 30px;
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
