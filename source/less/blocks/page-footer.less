@@ -6,8 +6,8 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  padding-top: 3px;
   padding-bottom: 10px;
+  padding-top: 9px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -31,35 +31,63 @@
   display: block;
   text-align: center;
 
+  @media (min-width: @desktop-width) {
+    margin-right: 75px;
+  }
+
   svg {
+    &:hover {
+      fill: @bright-element;
+    }
+
     &:active {
       fill-opacity: 0.3;
       fill: @base-text;
     }
   }
 
-  .page-footer__logo-glasses {
-    fill: @bright-element;
-  }
-
   .page-footer__logo-text {
     fill: @base-text;
+  }
+}
 
+.page-footer__login-catalog {
+  svg {
     &:hover {
       fill: @bright-element;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+      fill: @base-text;
     }
   }
 }
 
-.page-footer__login-catalog svg {
-  &:active {
-    fill-opacity: 0.3;
-    fill: @base-text;
+.page-footer__logo-glasses-base {
+  fill: @bright-element;
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
-.page-footer__logo-glasses {
+.page-footer__logo-starts-pink,
+.page-footer__logo-glasses-desk {
   fill: @bright-element;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo-starts {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .page-footer__logo-text {
@@ -85,7 +113,7 @@
   @media (min-width: @desktop-width) {
     padding: 0 130px;
     margin-top: 38px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 33px;
     margin-right: 33px;
   }
@@ -144,6 +172,19 @@
     width: 940px;
     padding: 0;
   }
+
+  .social__list {
+    margin-top: 38px;
+    padding-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 960px) {
+      margin-right: -2px;
+    }
+  }
 }
 
 .page-footer__wrapper-catalog .copyright {
@@ -165,18 +206,16 @@
   overflow-x: hidden;
 
   img {
-    width: 320px;
+    width: 100%;
     padding-top: 34px;
     height: 236px;
 
     @media (min-width: @tablet-width) {
-      width: 660px;
       height: 373px;
       padding-top: 0;
     }
 
     @media (min-width: @desktop-width) {
-      width: 1200px;
       height: 502px;
     }
   }
@@ -218,14 +257,14 @@
     }
 
     @media (min-width: @desktop-width) {
-      bottom: 212px;
-      left: 622px;
+      bottom: 210px;
+      left: 693px;
     }
   }
 }
 
 .page-footer__social {
-  margin-top: 33px;
+  margin-top: -11px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;

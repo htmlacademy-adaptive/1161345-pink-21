@@ -5,9 +5,36 @@
 .social__list {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 75px;
+  }
 }
 
 .social__item {
   margin-right: 4px;
   margin-left: 4px;
+
+  svg {
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+}
+
+.social__link-border {
+  stroke: @base-text;
+  stroke-opacity: 0.1;
+
+  &:hover {
+    stroke-opacity: 1;
+  }
+
+  &:active {
+    stroke-opacity: 0.1;
+  }
+}
+
+.social__link-label {
+  fill: @bright-element;
 }

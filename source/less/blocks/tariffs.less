@@ -27,10 +27,14 @@
 }
 
 .tariffs {
-  background-image: url("../img/grey_background.png");
+  background-image: url("../img/background.svg");
   background-repeat: no-repeat;
-  background-position: center 84%;
-  background-size: 100% 94%;
+  background-position: 20% 84%;
+  background-size: cover;
+
+  @media (min-width: @desktop-width) {
+    background-position: center -6%;
+  }
 }
 
 .tariffs__titel {
@@ -112,7 +116,7 @@
 }
 
 .tariffs-wrapper {
-  padding-top: 165px;
+  padding-top: 161px;
   overflow-x: hidden;
 
   @media (min-width: @tablet-width) {
