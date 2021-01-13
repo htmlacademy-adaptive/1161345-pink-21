@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" as="font">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -130,7 +131,7 @@
     </div>
     <div class="page-header__promo">
       <div class="promo__wrapper">
-        <h2 class="promo__header-form">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h2>
+        <h2 class="promo__header-form">Конкурс на самое<br>&nbsp;безбашенное<br>&nbsp;путешествие с Пинк</h2>
       </div>
     </div>
   </header>
@@ -142,7 +143,7 @@
     <section class="form">
       <div class="form__wrapper">
         <h2 class="visually-hidden">Форма для заполнения</h2>
-        <p class="form__title">Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на вашу бонусную карту! <br><span>Пожалуйста, заполните форму ниже:</span></p>
+        <p class="form__title">Поделитесь своей историей и получите шанс выиграть<br>&nbsp;ценный приз — 1000 миль на вашу бонусную карту!&nbsp;<br><span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="form__quest quest" action="https://echo.htmlacademy.ru" method="post">
           <div class="quest__about">
             <fieldset>
@@ -164,7 +165,7 @@
           <div class="quest__inner-backgraound quest__inner-checkbox">
             <div class="quest__checkbox-wrapper">
               <fieldset>
-                <legend class="quest__header-checkbox">Ваши безбашенные<br> достижения в путешествии</legend>
+                <legend class="quest__header-checkbox">Ваши безбашенные<br>&nbsp;достижения в путешествии</legend>
                 <ul class="quest__list list-reset">
                   <li class="quest__checkbox-item quest__checkbox-item-1">
                     <input class="visually-hidden quest__checkbox-input" type="checkbox" name="shark" id="filter-shark" checked>
@@ -234,7 +235,7 @@
               <fieldset>
                 <legend class="quest__header-textarea">Опишите свои эмоции</legend>
                 <p>
-                  <textarea name="comment" rows="4" id="feedback-comment" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea name="comment" rows="4" id="feedback-comment" type="tex" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </p>
               </fieldset>
             </div>
@@ -245,7 +246,6 @@
             </div>
           </div>
         </form>
-      </div>
       </div>
     </section>
   </main>
@@ -294,13 +294,12 @@
         </div>
       </div>
     </div>
-    </div>
   </footer>
 
 
   <section class="modal modal-fols">
     <h2 class="modal__header-fols">Что-то пошло не так!</h2>
-    <p class="modal__text modal__text-fols">Проверьте поля, выделенные красным, скорее всего вы забыли<br> их заполнить</p>
+    <p class="modal__text modal__text-fols">Проверьте поля, выделенные красным, скорее всего вы забыли<br>&nbsp;их заполнить</p>
     <div class="modal__fols-wrapper">
       <button class="modal__button modal__button-fols" type="button" aria-label="Закрыть">ОК</button>
     </div>
@@ -308,7 +307,7 @@
 
   <section class="modal modal-ok">
     <h2 class="modal__header-ok">Ваша заявка отправлена</h2>
-    <p class="modal__text modal__text-ok">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
+    <p class="modal__text modal__text-ok">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br>&nbsp;оповестим вас.</p>
     <div class="modal__ok-wrapper">
       <button class="modal__button modal__button-ok" type="button" aria-label="Закрыть">Закрыть окно</button>
     </div>
