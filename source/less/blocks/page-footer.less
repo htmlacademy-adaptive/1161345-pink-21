@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 120%;
   padding-bottom: 10px;
-  padding-top: 9px;
+  padding-top: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -44,10 +44,6 @@
       fill-opacity: 0.3;
       fill: @base-text;
     }
-  }
-
-  .page-footer__logo-text {
-    fill: @base-text;
   }
 }
 
@@ -159,23 +155,26 @@
 .page-footer__wrapper-catalog {
   text-align: center;
   margin-top: 68px;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     padding: 0 20px;
     margin-top: 39px;
     justify-content: space-between;
+    padding-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 93px;
     width: 940px;
     padding: 0;
+    padding-bottom: 40px;
   }
 
   .social__list {
     margin-top: 38px;
-    padding-bottom: 30px;
+    padding-bottom: 3px;
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
@@ -205,6 +204,25 @@
   position: relative;
   overflow-x: hidden;
 
+  .iframe-map {
+    position: absolute;
+    height: 200px;
+    z-index: 1;
+    border: 0;
+    width: 100%;
+    top: 38px;
+
+    @media (min-width: @tablet-width) {
+      height: 374px;
+      top: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 502px;
+      top: -3px;
+    }
+  }
+
   img {
     width: 100%;
     padding-top: 34px;
@@ -228,6 +246,7 @@
     height: 123px;
     background-repeat: no-repeat;
     top: -54px;
+    z-index: 10;
 
     @media (min-width: @tablet-width) {
       background-size: 100% 100%;

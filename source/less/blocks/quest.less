@@ -497,6 +497,7 @@ fieldset.quest_contact-inner::after {
 
   .quest__radio {
     order: 2;
+    max-width: 432px;
   }
 
   .quest__footer {
@@ -769,7 +770,9 @@ fieldset.quest_contact-inner::after {
   border: 2px solid @bright-element;
 }
 
-///
+.quest__checkbox-input:focus + label::before {
+  box-shadow: inset 0 2px 3px @base-text, 0 0 0 3px @bright-element;
+}
 
 .quest__radio--input + label::before {
   content: "";
@@ -826,6 +829,6 @@ fieldset.quest_contact-inner::after {
   border: 2px solid @bright-element;
 }
 
-.quest__radio--input + label:focus::before {
-  border: 2px solid blue;
+.quest__radio--input:focus + label::before {
+  box-shadow: 0 0 0 3px @bright-element;
 }

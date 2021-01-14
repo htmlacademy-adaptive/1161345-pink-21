@@ -33,7 +33,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: #d22856;
+  color: @bright-element;
 }
 
 .contacts__item a:first-child {
@@ -71,6 +71,7 @@
 
   .contacts__item:nth-child(3n) {
     width: 100%;
+    margin-right: 20px;
   }
 }
 
@@ -86,5 +87,11 @@
 
   .contacts__item:nth-child(2n) {
     order: 2;
+  }
+}
+
+.contacts__list:first-child {
+  @media (min-width: @tablet-width) {
+    margin-left: 21px;
   }
 }
