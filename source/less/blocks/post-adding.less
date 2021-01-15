@@ -4,7 +4,7 @@
   line-height: 30px;
   text-align: center;
   margin-top: 42px;
-  margin-bottom: 64px;
+  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -19,9 +19,12 @@
 }
 
 .post-adding__form {
+  background-color: @admission;
+  padding-top: 20px;
+  padding-bottom: 34px;
+
   @media (min-width: @tablet-width) {
     text-align: right;
-    background-color: @admission;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 58px;
@@ -313,7 +316,12 @@
 }
 
 .post-adding__form-wrapper {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: @tablet-width) {
+    max-width: 660px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
@@ -321,7 +329,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    max-width: 940px;
     background-color: @admission;
     padding-top: 59px;
     padding-bottom: 36px;
