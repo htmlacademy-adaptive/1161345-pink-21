@@ -5,22 +5,24 @@
   background-color: @admission;
   padding-top: 11px;
   padding-left: 17px;
+  padding-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 31px;
-    padding-bottom: 14px;
     margin-top: 5px;
+    padding-right: 31px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 27px;
     margin-top: -9px;
-    padding-bottom: 13px;
     margin-bottom: 32px;
     padding-top: 21px;
+    padding-bottom: 23px;
   }
 }
 
@@ -28,25 +30,34 @@
   font-size: 14px;
   line-height: 24px;
   padding-top: 0;
-  padding-bottom: 9px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
     order: 2;
     width: 100%;
-    margin-top: -18px;
 
     br {
       display: none;
     }
   }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -18px;
-  }
 }
 
 .gallery__likes-promo {
+  position: relative;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 24px;
+  color: @bright-element;
+  background-color: @admission;
+  padding-left: 31px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 31px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -54,36 +65,14 @@
     height: 12px;
     background-image: url("../img/catalog/heart.svg");
     background-repeat: no-repeat;
-    top: 147px;
-    left: 17px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 
     @media (min-width: @tablet-width) {
-      top: 20px;
-      left: 576px;
+      right: 0;
+      left: auto;
     }
-
-    @media (min-width: @desktop-width) {
-      left: 896px;
-      top: 32px;
-    }
-  }
-
-  font-size: 12px;
-  line-height: 24px;
-  color: @bright-element;
-  background-color: @admission;
-  margin: 0;
-  padding-left: 31px;
-  text-transform: uppercase;
-  padding-bottom: 17px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 299px;
-    padding-top: 4px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 621px;
   }
 }
 
@@ -109,7 +98,7 @@
 
   @media (min-width: @desktop-width) {
     top: 689px;
-    right: 170px;
+    right: 240px;
   }
 }
 
