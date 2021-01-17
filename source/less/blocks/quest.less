@@ -59,12 +59,20 @@
 }
 
 .quest__about {
-  padding: 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
 
   @media (min-width: @desktop-width) {
+    max-width: 960px;
     padding: 0;
     order: 1;
     margin-top: 23px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -82,7 +90,7 @@
 
 .quest__checkbox-wrapper {
   @media (min-width: @tablet-width) {
-    margin-top: 85px;
+    margin-top: 68px;
     position: relative;
   }
 
@@ -97,11 +105,11 @@
   font-weight: normal;
   text-transform: uppercase;
   color: @bright-element;
-  margin: 0;
   padding-top: 39px;
   padding-left: 50px;
   text-align: center;
   padding-right: 45px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -187,6 +195,12 @@
 .quest__header {
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
 }
 
 .quest__inner-backgraound {
@@ -407,8 +421,12 @@ fieldset.quest_contact-inner::after {
 
 .quest_contacts {
   padding: 0 20px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
+    max-width: 660px;
     order: 3;
     margin-top: 49px;
     position: relative;
@@ -416,6 +434,7 @@ fieldset.quest_contact-inner::after {
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    max-width: 960px;
     margin-top: 26px;
     padding: 0;
   }
@@ -468,15 +487,21 @@ fieldset.quest_contact-inner::after {
 }
 
 .quest_textarea {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+
   @media (min-width: @tablet-width) {
     order: 5;
     margin-top: 67px;
-    margin-left: 21px;
+
     min-width: 619px;
+    max-width: 660px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0;
+
+    max-width: 960px;
   }
 }
 
@@ -493,11 +518,13 @@ fieldset.quest_contact-inner::after {
 
   .quest__inner-checkbox {
     order: 4;
+    margin: 0 auto;
+    max-width: 660px;
   }
 
   .quest__radio {
     order: 2;
-    max-width: 432px;
+    margin: 0 auto;
   }
 
   .quest__footer {
@@ -541,6 +568,7 @@ fieldset.quest_contact-inner::after {
 
   .quest__inner-checkbox {
     width: 100%;
+    max-width: 960px;
   }
 
   .quest__list {
@@ -549,6 +577,10 @@ fieldset.quest_contact-inner::after {
     align-items: baseline;
     flex-wrap: wrap;
     padding-bottom: 11px;
+
+    @media (min-width: @desktop-width) {
+      max-width: 960px;
+    }
   }
 
   .quest__checkbox-item {
@@ -591,20 +623,23 @@ fieldset.quest_contact-inner::after {
   padding-top: 47px;
 }
 
-.quest__text-mobile {
+.quest__text {
   padding-left: 70px;
 
-  @media (min-width: @desktop-width) {
+  .quest__text-desktop {
     display: none;
-  }
-}
 
-.quest__text-desktop {
-  display: none;
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 138px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
-    margin-left: 328px;
+    margin-left: 190px;
   }
 }
 
@@ -636,8 +671,8 @@ fieldset.quest_contact-inner::after {
   text-transform: uppercase;
   color: @bright-element;
   text-align: center;
-  margin: 0;
   padding-top: 36px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -831,4 +866,12 @@ fieldset.quest_contact-inner::after {
 
 .quest__radio--input:focus + label::before {
   box-shadow: 0 0 0 3px @bright-element;
+}
+
+.quest__footer {
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
+  }
 }

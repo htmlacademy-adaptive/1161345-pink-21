@@ -65,17 +65,16 @@
 .page-header__promo-index {
   background-color: @header;
   color: @background;
-  background-image: url("../img/mobile.png"), url("../img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom, center center;
-  background-size: 320px 286px, cover;
+  background-position: center center;
+  background-size: cover;
   min-height: 396px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/mobile_table.png"),
-      url("../img/back-tablet.jpg");
-    background-position: 1px bottom, center center;
-    background-size: 660px 545px, cover;
+    background-image: url("../img/back-tablet.jpg");
+    background-position: center center;
+    background-size: cover;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
@@ -83,13 +82,39 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/mobile_desk.png"),
-      url("../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
-    background-position: 254px bottom, center center;
-    background-size: 1050px 645px, cover;
+    background-position: center center;
+    background-size: cover;
+    min-height: 853px;
+  }
+}
+
+.page-header__promo-index-wrap {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/mobile.png");
+  background-position: left bottom;
+  background-size: 320px 286px;
+  min-height: 396px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    background-image: url("../img/mobile_table.png");
+    background-position: 1px bottom;
+    background-size: 661px 542px;
+    min-height: 622px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    background-image: url("../img/mobile_desk.png");
+    background-position: 24px bottom;
+    background-size: 1050px 645px;
     min-height: 853px;
   }
 }
