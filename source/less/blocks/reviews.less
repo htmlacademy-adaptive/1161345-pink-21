@@ -7,7 +7,7 @@
   }
 }
 
-.reviews-wrapper {
+.reviews__wrapper {
   text-align: center;
   padding-top: 13px;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.reviews-wrapper::before {
+.reviews__wrapper::before {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -174,4 +174,20 @@ p.reviews__toggles.slider__toggles {
 
 .reviews__toggles:active::after {
   opacity: 0.1;
+}
+
+.reviews__toggles::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 3px solid @base-text;
+  border-radius: 7px;
+  left: 40%;
+  bottom: -43px;
+
+  @media (min-width: @tablet-width) {
+    left: 45%;
+    bottom: -35px;
+  }
 }

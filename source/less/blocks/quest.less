@@ -261,7 +261,7 @@
 
 // Contacts
 
-fieldset.quest_contact-inner {
+fieldset.quest__contact-inner {
   position: relative;
   margin-top: 16px;
 
@@ -276,7 +276,7 @@ fieldset.quest_contact-inner {
   }
 }
 
-fieldset.quest_contact-inner::before {
+fieldset.quest__contact-inner::before {
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -296,7 +296,7 @@ fieldset.quest_contact-inner::before {
   }
 }
 
-fieldset.quest_contact-inner::after {
+fieldset.quest__contact-inner::after {
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -316,7 +316,7 @@ fieldset.quest_contact-inner::after {
   }
 }
 
-.quest_contacts label {
+.quest__contacts label {
   @media (min-width: @tablet-width) {
     margin-left: 77px;
     margin-top: 15px;
@@ -334,7 +334,7 @@ fieldset.quest_contact-inner::after {
   }
 }
 
-.quest_number-tel::before {
+.quest__number-tel::before {
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -352,7 +352,7 @@ fieldset.quest_contact-inner::after {
   }
 }
 
-.quest_email::after {
+.quest__email::after {
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -412,14 +412,14 @@ fieldset.quest_contact-inner::after {
   }
 }
 
-.quest_contacts p {
+.quest__contacts p {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
   }
 }
 
-.quest_contacts {
+.quest__contacts {
   padding: 0 20px;
   max-width: 320px;
   margin-left: auto;
@@ -440,7 +440,7 @@ fieldset.quest_contact-inner::after {
   }
 }
 
-.quest_contact-inner label {
+.quest__contact-inner label {
   @media (min-width: @tablet-width) {
     margin-top: 18px;
     order: 1;
@@ -560,7 +560,7 @@ fieldset.quest_contact-inner::after {
     padding-right: 0;
   }
 
-  .quest_contact-inner {
+  .quest__contact-inner {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -601,7 +601,7 @@ fieldset.quest_contact-inner::after {
   background-position: 50%;
 }
 
-.quest_contact-inner .quest__item {
+.quest__contact-inner .quest__item {
   padding-top: 18px;
 
   @media (min-width: @tablet-width) {
@@ -874,4 +874,41 @@ fieldset.quest_contact-inner::after {
   @media (min-width: @tablet-width) {
     margin-top: 70px;
   }
+}
+
+//Button
+
+.quest__button-form {
+  background-color: @button;
+  color: @background;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  min-width: 276px;
+  border: 2px solid @button;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border-radius: 1px;
+  margin-bottom: 20px;
+  margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    min-width: 298px;
+    margin-bottom: 40px;
+  }
+}
+
+.quest__button-form:hover {
+  background-color: @button-hover;
+}
+
+.quest__button-form:active {
+  background-color: @button-hover;
+  color: fade(@background, 30%);
+}
+
+.quest__button-form:disabled {
+  background-color: @border-form;
 }
