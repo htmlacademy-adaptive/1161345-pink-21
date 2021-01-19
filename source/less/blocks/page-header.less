@@ -39,6 +39,11 @@
   background-position: 0 -68px;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: cover auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     background-position: 0 -44px;
@@ -47,7 +52,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
-      background-size: 1320px auto;
     }
   }
 
@@ -57,7 +61,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
-      background-size: 1320px auto;
     }
   }
 }
@@ -71,6 +74,11 @@
   background-size: cover;
   min-height: 396px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: cover auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     background-position: center center;
@@ -79,6 +87,10 @@
     grid-column-end: 4;
     grid-row: 2;
     min-height: 618px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -89,6 +101,10 @@
     background-position: center center;
     background-size: cover;
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -101,6 +117,10 @@
   min-height: 396px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     width: 660px;
     background-image: url("../img/mobile_table.png");
@@ -111,7 +131,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile_table@2x.png");
-      background-size: 661px 542px;
     }
   }
 
@@ -124,7 +143,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile_desk@2x.png");
-      background-size: 1050px 645px;
     }
   }
 }
