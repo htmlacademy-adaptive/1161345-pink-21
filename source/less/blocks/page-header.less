@@ -250,3 +250,186 @@
     display: none;
   }
 }
+
+.page-header__promo-slogan {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  padding: 24px 20px 34px 20px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    margin-left: 20px;
+    text-align: center;
+    max-width: 300px;
+    padding: 0;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 399px;
+    padding-right: 59px;
+    right: 57%;
+    margin-top: 109px;
+  }
+}
+
+.page-header__promo-buttton-to-all {
+  border: 3px solid @background;
+  box-sizing: border-box;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 301px;
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+a.page-header__promo-buttton-to-all {
+  @media (min-width: @tablet-width) {
+    margin-top: 130px;
+    margin-bottom: 64px;
+    padding-left: 43px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    margin-top: 164px;
+    margin-bottom: 75px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+
+.page-header__promo-buttton-to-all:hover {
+  background-color: @background;
+  color: @bright-element;
+}
+
+.page-header__promo-buttton-to-all:active {
+  background-color: @background;
+  color: fade(@bright-element, 30%);
+}
+
+.page-header__promo-link--Android {
+  display: block;
+  background-image: url("../img/android-logo.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+  margin-left: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+  }
+}
+
+.page-header__promo-link--Wicrosoft {
+  display: block;
+  background-image: url("../img/microsoft-logo.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+  }
+}
+
+.page-header__promo-link--Apple {
+  display: block;
+  background-image: url("../img/apple-logo.svg");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+  margin-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 46px;
+  }
+}
+
+
+.page-header__promo-intro {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 8px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 4px;
+    margin-top: 48px;
+  }
+}
+
+.page-header__promo-item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-header__promo a {
+  color: inherit;
+  margin-top: 31px;
+  display: inline-block;
+}
+
+.page-header__promo-list {
+  display: flex;
+  margin-top: -9px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    margin-top: -17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -4px;
+  }
+}
